@@ -44,6 +44,7 @@
         </div>
 
         <div class="d-flex flex-wrap gap-2">
+          <a href="sets.html" class="btn btn-outline-primary">📊 Set Recommendations</a>
           <input id="search" class="form-control" style="width: 260px" placeholder="Search Pokémon (e.g., pikachu)" />
           <select id="rarity" class="form-select" style="width: 200px">
             <option value="">All rarities</option>
@@ -89,16 +90,20 @@
   }
 
   function findPokemonMatch(productName, dexMap) {
-    const normalized = normalizeName(productName);
+    // Normalize: lowercase and remove punctuation except spaces and hyphens
+    const normalized = productName.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, ' ').trim();
     
-    // First try exact match
-    if (dexMap[normalized]) {
-      return dexMap[normalized];
-    }
+    // Check if any Pokémon name from dexMap appears as whole word(s) in the card name
+    // Sort by length (longest first) to match more specific names first
+    const sortedDexEntries = Object.entries(dexMap).sort((a, b) => b[0].length - a[0].length);
     
-    // Try substring matching: check if any dex pokemon name is contained in the product name
-    for (const [dexName, dexNum] of Object.entries(dexMap)) {
-      if (normalized.includes(dexName)) {
+    for (const [dexName, dexNum] of sortedDexEntries) {
+      // Create regex with word boundaries to match whole words only
+      // Replace spaces in dexName with \s+ to match any whitespace
+      const pattern = '\\b' + dexName.replace(/\s+/g, '\\s+') + '\\b';
+      const regex = new RegExp(pattern, 'i');
+      
+      if (regex.test(normalized)) {
         return dexNum;
       }
     }

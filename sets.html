@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Recommendations - De Bietjes Pokédex</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .sticky-top-bar { position: sticky; top: 0; z-index: 1020; background: rgba(255,255,255,.95); backdrop-filter: blur(6px); }
+    .set-card { border-radius: 16px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; height: 100%; cursor: pointer; }
+    .set-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important; }
+    .set-header { padding: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; position: relative; }
+    .set-logo { max-width: 150px; max-height: 60px; object-fit: contain; margin-bottom: 0.5rem; }
+    .score-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(255,255,255,0.95); color: #667eea; font-weight: 700; font-size: 1.5rem; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    .set-body { padding: 1.5rem; }
+    .missing-count { font-size: 2rem; font-weight: 700; color: #667eea; margin-bottom: 0.5rem; }
+    .rarity-bar { height: 8px; border-radius: 4px; margin-bottom: 0.5rem; }
+    .rarity-item { display: flex; justify-content: space-between; align-items: center; padding: 0.25rem 0; font-size: 0.875rem; }
+    .rarity-label { display: flex; align-items: center; gap: 0.5rem; }
+    .rarity-dot { width: 12px; height: 12px; border-radius: 50%; }
+    .stats-card { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border-radius: 16px; padding: 1.5rem; }
+    .nav-link-custom { color: #667eea; font-weight: 600; text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; transition: background 0.2s; }
+    .nav-link-custom:hover { background: rgba(102, 126, 234, 0.1); color: #667eea; }
+    .pokemon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 0.5rem; margin-top: 1rem; }
+    .pokemon-chip { background: #f8f9fa; border-radius: 8px; padding: 0.5rem; text-align: center; font-size: 0.75rem; border: 2px solid transparent; }
+    .pokemon-chip.owned { border-color: #28a745; background: #d4edda; }
+    .pokemon-chip.missing { border-color: #dc3545; background: #f8d7da; }
+    .filter-btn { margin: 0.25rem; }
+    .modal-card-wrapper { border-radius: 12px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; background: white; }
+    .modal-card-wrapper:hover { transform: translateY(-4px); box-shadow: 0 8px 16px rgba(0,0,0,0.1) !important; cursor: pointer; }
+    .modal-card-image { width: 100%; height: auto; display: block; border-radius: 12px 12px 0 0; }
+    .modal-card-info { padding: 0.5rem; }
+    .modal-card-title { font-weight: 600; font-size: 0.875rem; color: #212529; margin-bottom: 0.25rem; }
+    .modal-card-number { font-size: 0.75rem; color: #6c757d; }
+    .modal-card-meta { font-size: 0.7rem; color: #adb5bd; margin-top: 0.25rem; }
+  </style>
+</head>
+
+<body class="bg-light">
+  <div class="sticky-top-bar border-bottom">
+    <div class="container py-3">
+      <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
+        <div>
+          <h1 class="h4 mb-0">Set Recommendations</h1>
+          <small class="text-muted">Find the best sets to complete your Pokédex</small>
+        </div>
+        <div class="d-flex gap-2 align-items-center">
+          <a href="dex.html" class="nav-link-custom">← Back to Pokédex</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <!-- Summary Stats -->
+    <div class="row mb-4">
+      <div class="col-md-4 mb-3">
+        <div class="stats-card">
+          <div class="h2 mb-0" id="totalSets">-</div>
+          <small>Total Sets</small>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="stats-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+          <div class="h2 mb-0" id="totalMissing">-</div>
+          <small>Missing Pokémon, available in these sets</small>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="stats-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); cursor: pointer;" id="unavailableCard" data-bs-toggle="modal" data-bs-target="#unavailableModal">
+          <div class="h2 mb-0" id="unavailableCount">-</div>
+          <small>Unavailable in these sets 🔍</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sorting & Filters -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-2">
+            <label class="form-label small text-muted mb-1">Sort By</label>
+            <select id="sortBy" class="form-select">
+              <option value="score">Best Recommendation (Score)</option>
+              <option value="missing">Most Missing Pokémon</option>
+              <option value="name">Set Name (A-Z)</option>
+              <option value="dateNew">Release Date (Newest First)</option>
+              <option value="dateOld">Release Date (Oldest First)</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-2">
+            <label class="form-label small text-muted mb-1">Tip</label>
+            <div>
+              <small class="text-muted">Click on any set to see missing cards</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Set Cards Modal -->
+    <div class="modal fade" id="setCardsModal" tabindex="-1" aria-labelledby="setCardsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="setCardsModalLabel">Missing Cards</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="setCardsList" class="row g-3">
+              <!-- Will be populated with JavaScript -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unavailable Pokémon Modal -->
+    <div class="modal fade" id="unavailableModal" tabindex="-1" aria-labelledby="unavailableModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="unavailableModalLabel">Pokémon NOT Available in Scarlet & Violet Sets</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-muted">These Pokémon cannot be pulled from any current Scarlet & Violet set:</p>
+            <div id="unavailablePokemonList" class="row g-2">
+              <!-- Will be populated with JavaScript -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sets Grid -->
+    <div id="setsGrid" class="row g-4">
+      <div class="col-12 text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2 text-muted">Loading sets data...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // Rarity weights based on typical pull rates
+  const RARITY_WEIGHTS = {
+    'Common': 1.0,
+    'Uncommon': 0.8,
+    'Rare': 0.4,
+    'Holo Rare': 0.2,
+    'Rare Holo': 0.2,
+    'Rare Holo GX': 0.1,
+    'Rare Holo LV.X': 0.1,
+    'Rare Ultra': 0.05,
+    'Rare Secret': 0.03,
+    'Rare Rainbow': 0.03,
+    'Ultra Rare': 0.05,
+    'Illustration Rare': 0.08,
+    'Double Rare': 0.06,
+    'Special Illustration Rare': 0.04,
+    'Hyper Rare': 0.03
+  };
+
+  const RARITY_COLORS = {
+    'Common': '#6c757d',
+    'Uncommon': '#17a2b8',
+    'Rare': '#ffc107',
+    'Holo Rare': '#fd7e14',
+    'Rare Holo': '#fd7e14',
+    'Ultra Rare': '#dc3545',
+    'Illustration Rare': '#e83e8c',
+    'Double Rare': '#d63384',
+    'Special Illustration Rare': '#6f42c1',
+    'Hyper Rare': '#6610f2'
+  };
+
+  let setsData = [];
+  let ownedPokemon = new Set();
+  let dexMap = {};
+  let unavailablePokemonList = [];
+  let showDetails = false;
+
+  function findPokemonMatch(pokemonName, dexMap) {
+    // Normalize: lowercase and remove punctuation except spaces and hyphens
+    const normalized = pokemonName.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, ' ').trim();
+    
+    // Check if any Pokémon name from dexMap appears as whole word(s) in the card name
+    // Sort by length (longest first) to match more specific names first
+    const sortedDexEntries = Object.entries(dexMap).sort((a, b) => b[0].length - a[0].length);
+    
+    for (const [dexName, dexNum] of sortedDexEntries) {
+      // Create regex with word boundaries to match whole words only
+      // Replace spaces in dexName with \s+ to match any whitespace
+      const pattern = '\\b' + dexName.replace(/\s+/g, '\\s+') + '\\b';
+      const regex = new RegExp(pattern, 'i');
+      
+      if (regex.test(normalized)) {
+        return dexNum;
+      }
+    }
+    
+    return null;
+  }
+
+  async function loadAll() {
+    const [setsRes, ownedRes, dexRes] = await Promise.all([
+      fetch("sets-data.json"),
+      fetch("owned.json"),
+      fetch("pokedex-map.json")
+    ]);
+
+    setsData = await setsRes.json();
+    const ownedJson = await ownedRes.json();
+    dexMap = await dexRes.json();
+
+    // Build set of owned Pokémon
+    const allOwnedProducts = ownedJson.products || [];
+    for (const p of allOwnedProducts) {
+      const dexNum = findPokemonMatch(p.product_name, dexMap);
+      if (dexNum) {
+        ownedPokemon.add(dexNum);
+      }
+    }
+
+    calculateRecommendations();
+    renderSets();
+  }
+
+  function calculateRecommendations() {
+    for (const set of setsData) {
+      let totalScore = 0;
+      let missingCount = 0;
+      let missingByRarity = {};
+
+      for (const pokemon of set.pokemon) {
+        // Find matching Pokémon using substring search
+        const dexNum = findPokemonMatch(pokemon.name, dexMap);
+        if (!dexNum || ownedPokemon.has(dexNum)) {
+          continue; // Already owned
+        }
+
+        // Missing Pokémon
+        missingCount++;
+        const rarity = pokemon.rarity || 'Common';
+        const weight = RARITY_WEIGHTS[rarity] || 0.01;
+        totalScore += weight;
+
+        missingByRarity[rarity] = (missingByRarity[rarity] || 0) + 1;
+      }
+
+      set.score = totalScore;
+      set.missingCount = missingCount;
+      set.missingByRarity = missingByRarity;
+      set.totalPokemon = set.pokemon.length;
+      set.ownedCount = set.totalPokemon - missingCount;
+    }
+
+    // Update summary stats
+    // Calculate unique Pokémon across all sets
+    const uniquePokemonInSets = new Set();
+    const uniqueMissingPokemon = new Set();
+    
+    for (const set of setsData) {
+      for (const pokemon of set.pokemon) {
+        // Find matching Pokémon using substring search
+        const dexNum = findPokemonMatch(pokemon.name, dexMap);
+        if (dexNum) {
+          uniquePokemonInSets.add(dexNum);
+          if (!ownedPokemon.has(dexNum)) {
+            uniqueMissingPokemon.add(dexNum);
+          }
+        }
+      }
+    }
+    
+    const totalUniquePokemon = uniquePokemonInSets.size;
+    const uniqueMissingCount = uniqueMissingPokemon.size;
+    const uniqueOwnedCount = totalUniquePokemon - uniqueMissingCount;
+    const completionRate = totalUniquePokemon > 0 ? ((uniqueOwnedCount / totalUniquePokemon) * 100).toFixed(1) : 0;
+
+    // Calculate Pokémon NOT in any sets (unavailable to pull) AND not already owned
+    const allDexNumbers = new Set(Object.values(dexMap));
+    const unavailablePokemon = new Set();
+    
+    for (const dexNum of allDexNumbers) {
+      if (!uniquePokemonInSets.has(dexNum) && !ownedPokemon.has(dexNum)) {
+        unavailablePokemon.add(dexNum);
+      }
+    }
+    
+    unavailablePokemonList = Array.from(unavailablePokemon)
+      .map(dexNum => {
+        // Find the name from dexMap
+        for (const [name, num] of Object.entries(dexMap)) {
+          if (num === dexNum) {
+            return { dexNum, name };
+          }
+        }
+        return null;
+      })
+      .filter(p => p !== null)
+      .sort((a, b) => a.dexNum - b.dexNum);
+    
+    document.getElementById('totalSets').textContent = setsData.length;
+    document.getElementById('totalMissing').textContent = uniqueMissingCount;
+    document.getElementById('unavailableCount').textContent = unavailablePokemonList.length;
+    
+    // Populate modal
+    populateUnavailableModal();
+  }
+
+  function populateUnavailableModal() {
+    const listDiv = document.getElementById('unavailablePokemonList');
+    listDiv.innerHTML = '';
+    
+    for (const pokemon of unavailablePokemonList) {
+      const col = document.createElement('div');
+      col.className = 'col-md-4 col-6';
+      
+      const chip = document.createElement('div');
+      chip.className = 'pokemon-chip';
+      chip.style.textAlign = 'left';
+      chip.style.background = '#fff3cd';
+      chip.style.borderColor = '#ffc107';
+      
+      const displayName = pokemon.name.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      chip.innerHTML = `<strong>#${pokemon.dexNum}</strong> ${displayName}`;
+      
+      col.appendChild(chip);
+      listDiv.appendChild(col);
+    }
+  }
+
+  function renderSets() {
+    const sortBy = document.getElementById('sortBy').value;
+    
+    // Sort sets
+    const sorted = [...setsData].sort((a, b) => {
+      if (sortBy === 'score') return b.score - a.score;
+      if (sortBy === 'missing') return b.missingCount - a.missingCount;
+      if (sortBy === 'name') return a.name.localeCompare(b.name);
+      if (sortBy === 'dateNew') return new Date(b.release_date) - new Date(a.release_date);
+      if (sortBy === 'dateOld') return new Date(a.release_date) - new Date(b.release_date);
+      return 0;
+    });
+
+    const grid = document.getElementById('setsGrid');
+    grid.innerHTML = '';
+
+    for (const set of sorted) {
+      const col = document.createElement('div');
+      col.className = 'col-md-6 col-lg-4';
+
+      const card = document.createElement('div');
+      card.className = 'card set-card shadow-sm';
+
+      // Header
+      const header = document.createElement('div');
+      header.className = 'set-header';
+      
+      const scoreBadge = document.createElement('div');
+      scoreBadge.className = 'score-badge';
+      scoreBadge.textContent = set.score.toFixed(1);
+      scoreBadge.title = 'Recommendation Score';
+      
+      header.innerHTML = `
+        ${set.logo ? `<img src="${set.logo}" alt="${set.name}" class="set-logo">` : ''}
+        <h5 class="mb-1">${set.name}</h5>
+        <small class="opacity-75">${set.series}</small>
+      `;
+      header.appendChild(scoreBadge);
+
+      // Body
+      const body = document.createElement('div');
+      body.className = 'set-body';
+
+      const missingHtml = `
+        <div class="missing-count">${set.missingCount} Missing</div>
+        <div class="text-muted small mb-3">
+          ${set.ownedCount} / ${set.totalPokemon} owned
+        </div>
+      `;
+
+      // Rarity breakdown
+      let rarityHtml = '<div class="mb-3">';
+      const sortedRarities = Object.entries(set.missingByRarity).sort((a, b) => b[1] - a[1]);
+      for (const [rarity, count] of sortedRarities) {
+        const color = RARITY_COLORS[rarity] || '#6c757d';
+        rarityHtml += `
+          <div class="rarity-item">
+            <div class="rarity-label">
+              <span class="rarity-dot" style="background: ${color};"></span>
+              <span>${rarity}</span>
+            </div>
+            <span class="badge bg-secondary">${count}</span>
+          </div>
+        `;
+      }
+      rarityHtml += '</div>';
+
+      body.innerHTML = missingHtml + rarityHtml;
+
+      card.appendChild(header);
+      card.appendChild(body);
+      
+      // Add click handler to show missing cards modal
+      card.addEventListener('click', () => {
+        showSetCardsModal(set);
+      });
+      
+      col.appendChild(card);
+      grid.appendChild(col);
+    }
+  }
+
+  function showSetCardsModal(set) {
+    // Update modal title
+    document.getElementById('setCardsModalLabel').textContent = `Missing Cards - ${set.name}`;
+    
+    // Get missing cards with dex numbers
+    const missingCards = [];
+    for (const pokemon of set.pokemon) {
+      const dexNum = findPokemonMatch(pokemon.name, dexMap);
+      if (dexNum && !ownedPokemon.has(dexNum)) {
+        // Add all card variants for this missing Pokémon
+        for (const card of pokemon.cards) {
+          missingCards.push({
+            ...card,
+            dexNum: dexNum
+          });
+        }
+      }
+    }
+    
+    // Sort by dex number
+    missingCards.sort((a, b) => a.dexNum - b.dexNum);
+    
+    // Populate modal with card images
+    const listDiv = document.getElementById('setCardsList');
+    listDiv.innerHTML = '';
+    
+    if (missingCards.length === 0) {
+      listDiv.innerHTML = '<div class="col-12 text-center py-5"><p class="text-muted">No missing cards in this set!</p></div>';
+    } else {
+      for (const card of missingCards) {
+        const col = document.createElement('div');
+        col.className = 'col-6 col-md-4 col-lg-3';
+        
+        const wrapper = document.createElement('div');
+        wrapper.className = 'modal-card-wrapper shadow-sm';
+        
+        const img = document.createElement('img');
+        img.src = card.image_small;
+        img.alt = card.card_name;
+        img.className = 'modal-card-image';
+        img.loading = 'lazy';
+        
+        const info = document.createElement('div');
+        info.className = 'modal-card-info';
+        
+        const title = document.createElement('div');
+        title.className = 'modal-card-title';
+        title.textContent = card.card_name;
+        
+        const number = document.createElement('div');
+        number.className = 'modal-card-number';
+        number.textContent = `#${card.dexNum.toString().padStart(3, '0')}`;
+        
+        const meta = document.createElement('div');
+        meta.className = 'modal-card-meta';
+        meta.textContent = card.rarity;
+        
+        info.appendChild(title);
+        info.appendChild(number);
+        info.appendChild(meta);
+        wrapper.appendChild(img);
+        wrapper.appendChild(info);
+        col.appendChild(wrapper);
+        listDiv.appendChild(col);
+      }
+    }
+    
+    // Show modal
+    const modal = new bootstrap.Modal(document.getElementById('setCardsModal'));
+    modal.show();
+  }
+
+  // Event listeners
+  document.getElementById('sortBy').addEventListener('change', renderSets);
+
+  // Load data on page load
+  loadAll().catch(err => {
+    document.getElementById('setsGrid').innerHTML = `
+      <div class="col-12 text-center py-5">
+        <p class="text-danger">Error loading data: ${err.message}</p>
+      </div>
+    `;
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
