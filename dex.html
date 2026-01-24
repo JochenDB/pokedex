@@ -248,8 +248,8 @@
 
   async function loadAll() {
     const [dexRes, ownedRes] = await Promise.all([
-      fetch("./pokedex-map.json"),
-      fetch("./owned.json") // or your real API endpoint
+      fetch("pokedex-map.json"),
+      fetch("owned.json")
     ]);
 
     dexMap = await dexRes.json();
