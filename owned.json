@@ -27,7 +27,7 @@
   "total_posts": "0",
   "portfolio_value": [
     {
-      "price": "111.1728",
+      "price": "108.6428",
       "insertion_date": "2026-01-25T00:00:00.000Z"
     }
   ],
@@ -255,31 +255,6 @@
       "grade_company": null,
       "ebay_buy_link": "https://www.ebay.com/sch/i.html?_from=R40&_nkw=Pokemon+Astral+Radiance+Trainer+Gallery+Shadow+Rider+Calyrex+VMAX+(Secret)++TG30/TG30&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338929270&customid=collectr-showcase&toolid=10001&mkevt=1",
       "web_slug_group": "astral-radiance-trainer-gallery",
-      "web_slug_category": "3"
-    },
-    {
-      "product_id": "556445",
-      "catalog_category_name": "Pokemon",
-      "catalog_group": "Battle Academy 2024",
-      "catalog_group_id": "23520",
-      "product_name": "Armarouge ex (Armarouge 60) ",
-      "image_url": "https://public.getcollectr.com/public-assets/products/product_556445.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "card_number": "105",
-      "rarity": "Holo Rare",
-      "quantity": "1",
-      "grade_id": "52",
-      "market_price": "2.6400",
-      "market_price_diff": "-0.0900",
-      "market_price_percentage_diff": "-3.2967",
-      "total_products_owned_count": "0",
-      "watchlist": false,
-      "is_owned": true,
-      "is_card": true,
-      "card_condition": "NM",
-      "product_sub_type": "Holofoil",
-      "grade_company": null,
-      "ebay_buy_link": "https://www.ebay.com/sch/i.html?_from=R40&_nkw=Pokemon+Battle+Academy+2024+Armarouge+ex+(Armarouge+60)++105&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338929270&customid=collectr-showcase&toolid=10001&mkevt=1",
-      "web_slug_group": "battle-academy-2024",
       "web_slug_category": "3"
     },
     {
@@ -3304,6 +3279,31 @@
       "product_sub_type": "Normal",
       "grade_company": null,
       "ebay_buy_link": "https://www.ebay.com/sch/i.html?_from=R40&_nkw=Pokemon+Paradox+Rift+Wiglett++051/182&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338929270&customid=collectr-showcase&toolid=10001&mkevt=1",
+      "web_slug_group": "paradox-rift",
+      "web_slug_category": "3"
+    },
+    {
+      "product_id": "523824",
+      "catalog_category_name": "Pokemon",
+      "catalog_group": "Paradox Rift",
+      "catalog_group_id": "23286",
+      "product_name": "Porygon2 ",
+      "image_url": "https://public.getcollectr.com/public-assets/products/product_523824.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "card_number": "143/182",
+      "rarity": "Common",
+      "quantity": "1",
+      "grade_id": "52",
+      "market_price": "0.1100",
+      "market_price_diff": "0.0400",
+      "market_price_percentage_diff": "57.1429",
+      "total_products_owned_count": "0",
+      "watchlist": false,
+      "is_owned": true,
+      "is_card": true,
+      "card_condition": "NM",
+      "product_sub_type": "Normal",
+      "grade_company": null,
+      "ebay_buy_link": "https://www.ebay.com/sch/i.html?_from=R40&_nkw=Pokemon+Paradox+Rift+Porygon2++143/182&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338929270&customid=collectr-showcase&toolid=10001&mkevt=1",
       "web_slug_group": "paradox-rift",
       "web_slug_category": "3"
     },
