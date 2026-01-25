@@ -154,6 +154,7 @@
     const pct = Math.round((ownedCount / DEX_SIZE) * 1000) / 10; // 1 decimal
     document.getElementById("progressText").textContent = `${ownedCount}/${DEX_SIZE} (${pct}%)`;
     document.getElementById("progressBar").style.width = `${(ownedCount / DEX_SIZE) * 100}%`;
+    document.getElementById("subtitle").textContent = `(${ownedCount} unique Pokémon)`;
   }
 
   function populateRarityDropdown() {
@@ -260,11 +261,8 @@
     dexMap = await dexRes.json();
     const ownedJson = await ownedRes.json();
 
-    // Use profile info (optional)
-    const user = ownedJson.user || "Pokédex";
-    const totalCards = ownedJson.total_cards || "";
+    // Set title
     document.getElementById("title").textContent = `De Bietjes Pokédex`;
-    document.getElementById("subtitle").textContent = totalCards ? `(${totalCards} cards)` : "";
 
     // Build number -> name
     dexNameByNumber = {};
