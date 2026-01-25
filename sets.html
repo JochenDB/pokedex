@@ -34,6 +34,9 @@
     .modal-card-title { font-weight: 600; font-size: 0.875rem; color: #212529; margin-bottom: 0.25rem; }
     .modal-card-number { font-size: 0.75rem; color: #6c757d; }
     .modal-card-meta { font-size: 0.7rem; color: #adb5bd; margin-top: 0.25rem; }
+    .modal-filter-btn { margin: 0.25rem; }
+    .modal-card-wrapper.card-owned { opacity: 0.6; position: relative; }
+    .modal-card-wrapper.card-owned::after { content: '✓'; position: absolute; top: 0.5rem; right: 0.5rem; background: #28a745; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1rem; }
   </style>
 </head>
 
@@ -103,9 +106,15 @@
     <div class="modal fade" id="setCardsModal" tabindex="-1" aria-labelledby="setCardsModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="setCardsModalLabel">Missing Cards</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between align-items-center mb-2">
+              <h5 class="modal-title mb-0" id="setCardsModalLabel">Cards</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-sm btn-primary modal-filter-btn" id="filterMissing" data-filter="missing">Missing Only</button>
+              <button class="btn btn-sm btn-outline-primary modal-filter-btn" id="filterAllPokemon" data-filter="allPokemon">All Cards</button>
+            </div>
           </div>
           <div class="modal-body">
             <div id="setCardsList" class="row g-3">
@@ -189,6 +198,8 @@
   let dexMap = {};
   let unavailablePokemonList = [];
   let showDetails = false;
+  let currentModalSet = null;
+  let currentModalFilter = 'missing';
 
   function findPokemonMatch(pokemonName, dexMap) {
     // Normalize: lowercase and remove punctuation except spaces and hyphens
@@ -441,40 +452,85 @@
   }
 
   function showSetCardsModal(set) {
-    // Update modal title
-    document.getElementById('setCardsModalLabel').textContent = `Missing Cards - ${set.name}`;
+    currentModalSet = set;
+    renderModalCards();
     
-    // Get ALL missing cards with dex numbers (show all variants)
-    const missingCards = [];
+    // Show modal
+    const modal = new bootstrap.Modal(document.getElementById('setCardsModal'));
+    modal.show();
+  }
+  
+  function renderModalCards() {
+    if (!currentModalSet) return;
+    
+    const set = currentModalSet;
+    const filter = currentModalFilter;
+    
+    // Update modal title
+    let titleText = set.name;
+    if (filter === 'missing') {
+      titleText = `Missing Cards - ${set.name}`;
+    } else if (filter === 'allPokemon') {
+      titleText = `All Cards - ${set.name}`;
+    }
+    document.getElementById('setCardsModalLabel').textContent = titleText;
+    
+    // Update button states
+    document.querySelectorAll('.modal-filter-btn').forEach(btn => {
+      if (btn.dataset.filter === filter) {
+        btn.className = 'btn btn-sm btn-primary modal-filter-btn';
+      } else {
+        btn.className = 'btn btn-sm btn-outline-primary modal-filter-btn';
+      }
+    });
+    
+    // Collect cards based on filter
+    const cardsToShow = [];
+    
     for (const pokemon of set.pokemon) {
       const dexNum = findPokemonMatch(pokemon.name, dexMap);
-      if (dexNum && !ownedPokemon.has(dexNum)) {
-        // Add all card variants for this missing Pokémon
-        for (const card of pokemon.cards) {
-          missingCards.push({
-            ...card,
-            dexNum: dexNum
-          });
-        }
+      if (!dexNum) continue;
+      
+      const isPokemonOwned = ownedPokemon.has(dexNum);
+      
+      if (filter === 'missing' && isPokemonOwned) {
+        continue; // Skip owned pokemon in missing mode
+      }
+      
+      // Add all card variants for this Pokémon
+      for (const card of pokemon.cards) {
+        cardsToShow.push({
+          ...card,
+          dexNum: dexNum,
+          isPokemonOwned: isPokemonOwned
+        });
       }
     }
     
-    // Sort by dex number
-    missingCards.sort((a, b) => a.dexNum - b.dexNum);
+    // Sort by dex number, then by card number
+    cardsToShow.sort((a, b) => {
+      if (a.dexNum !== b.dexNum) return a.dexNum - b.dexNum;
+      return parseInt(a.number) - parseInt(b.number);
+    });
     
     // Populate modal with card images
     const listDiv = document.getElementById('setCardsList');
     listDiv.innerHTML = '';
     
-    if (missingCards.length === 0) {
-      listDiv.innerHTML = '<div class="col-12 text-center py-5"><p class="text-muted">No missing cards in this set!</p></div>';
+    if (cardsToShow.length === 0) {
+      listDiv.innerHTML = '<div class="col-12 text-center py-5"><p class="text-muted">No cards to display!</p></div>';
     } else {
-      for (const card of missingCards) {
+      for (const card of cardsToShow) {
         const col = document.createElement('div');
         col.className = 'col-6 col-md-4 col-lg-3';
         
         const wrapper = document.createElement('div');
         wrapper.className = 'modal-card-wrapper shadow-sm';
+        
+        // Add owned class if showing all cards and pokemon is owned
+        if (filter === 'allPokemon' && card.isPokemonOwned) {
+          wrapper.classList.add('card-owned');
+        }
         
         const img = document.createElement('img');
         img.src = card.image_small;
@@ -491,7 +547,7 @@
         
         const number = document.createElement('div');
         number.className = 'modal-card-number';
-        number.textContent = `#${card.dexNum.toString().padStart(3, '0')}`;
+        number.textContent = `#${card.dexNum.toString().padStart(3, '0')} • ${card.number}`;
         
         const meta = document.createElement('div');
         meta.className = 'modal-card-meta';
@@ -506,14 +562,21 @@
         listDiv.appendChild(col);
       }
     }
-    
-    // Show modal
-    const modal = new bootstrap.Modal(document.getElementById('setCardsModal'));
-    modal.show();
   }
 
   // Event listeners
   document.getElementById('sortBy').addEventListener('change', renderSets);
+  
+  // Modal filter buttons
+  document.getElementById('filterMissing').addEventListener('click', () => {
+    currentModalFilter = 'missing';
+    renderModalCards();
+  });
+  
+  document.getElementById('filterAllPokemon').addEventListener('click', () => {
+    currentModalFilter = 'allPokemon';
+    renderModalCards();
+  });
 
   // Load data on page load
   loadAll().catch(err => {
