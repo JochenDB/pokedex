@@ -239,8 +239,10 @@
   function calculateRecommendations() {
     for (const set of setsData) {
       let totalScore = 0;
-      let missingCount = 0;
       let missingByRarity = {};
+      
+      // Group missing Pokémon by dexNum and find the lowest rarity (highest weight) for each
+      const missingPokemonMap = new Map();
 
       for (const pokemon of set.pokemon) {
         // Find matching Pokémon using substring search
@@ -249,20 +251,35 @@
           continue; // Already owned
         }
 
-        // Missing Pokémon
-        missingCount++;
-        const rarity = pokemon.rarity || 'Common';
-        const weight = RARITY_WEIGHTS[rarity] || 0.01;
-        totalScore += weight;
-
-        missingByRarity[rarity] = (missingByRarity[rarity] || 0) + 1;
+        // Missing Pokémon - check if we already have this dexNum
+        if (!missingPokemonMap.has(dexNum)) {
+          missingPokemonMap.set(dexNum, []);
+        }
+        
+        // Check all card variants for this Pokémon to find the lowest rarity
+        for (const card of pokemon.cards) {
+          const rarity = card.rarity || 'Common';
+          const weight = RARITY_WEIGHTS[rarity] || 0.01;
+          missingPokemonMap.get(dexNum).push({ rarity, weight });
+        }
+      }
+      
+      // For each unique missing Pokémon, use the lowest rarity (highest weight)
+      for (const [dexNum, variants] of missingPokemonMap.entries()) {
+        // Find the variant with the highest weight (easiest to obtain)
+        const bestVariant = variants.reduce((best, current) => 
+          current.weight > best.weight ? current : best
+        );
+        
+        totalScore += bestVariant.weight;
+        missingByRarity[bestVariant.rarity] = (missingByRarity[bestVariant.rarity] || 0) + 1;
       }
 
       set.score = totalScore;
-      set.missingCount = missingCount;
+      set.missingCount = missingPokemonMap.size;
       set.missingByRarity = missingByRarity;
       set.totalPokemon = set.pokemon.length;
-      set.ownedCount = set.totalPokemon - missingCount;
+      set.ownedCount = set.totalPokemon - set.missingCount;
     }
 
     // Update summary stats
@@ -427,7 +444,7 @@
     // Update modal title
     document.getElementById('setCardsModalLabel').textContent = `Missing Cards - ${set.name}`;
     
-    // Get missing cards with dex numbers
+    // Get ALL missing cards with dex numbers (show all variants)
     const missingCards = [];
     for (const pokemon of set.pokemon) {
       const dexNum = findPokemonMatch(pokemon.name, dexMap);
