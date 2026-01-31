@@ -282,7 +282,8 @@
       const missingPokemonMap = new Map();
 
       for (const pokemon of set.pokemon) {
-        const dexNum = findPokemonMatch(pokemon.name, dexMap);
+        // Use dex_number directly if available (new format), fallback to fuzzy matching (old format)
+        const dexNum = pokemon.dex_number || findPokemonMatch(pokemon.name, dexMap);
         if (!dexNum) continue;
 
         // Find best variant (highest weight) for this Pokémon
@@ -341,8 +342,8 @@
     
     for (const set of setsData) {
       for (const pokemon of set.pokemon) {
-        // Find matching Pokémon using substring search
-        const dexNum = findPokemonMatch(pokemon.name, dexMap);
+        // Use dex_number directly if available (new format), fallback to fuzzy matching (old format)
+        const dexNum = pokemon.dex_number || findPokemonMatch(pokemon.name, dexMap);
         if (dexNum) {
           uniquePokemonInSets.add(dexNum);
           if (!ownedPokemon.has(dexNum)) {
@@ -576,7 +577,8 @@
     const cardsToShow = [];
     
     for (const pokemon of set.pokemon) {
-      const dexNum = findPokemonMatch(pokemon.name, dexMap);
+      // Use dex_number directly if available (new format), fallback to fuzzy matching (old format)
+      const dexNum = pokemon.dex_number || findPokemonMatch(pokemon.name, dexMap);
       if (!dexNum) continue;
       
       const isPokemonOwned = ownedPokemon.has(dexNum);
