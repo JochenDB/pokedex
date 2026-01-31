@@ -12,8 +12,17 @@
     .set-card { border-radius: 16px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; height: 100%; cursor: pointer; }
     .set-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important; }
     .set-header { padding: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; position: relative; }
-    .set-logo { max-width: 150px; max-height: 60px; object-fit: contain; margin-bottom: 0.5rem; }
-    .score-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(255,255,255,0.95); color: #667eea; font-weight: 700; font-size: 1.5rem; padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    .set-logo-container { height: 50px; margin-bottom: 0.5rem; display: flex; align-items: flex-end; }
+    .set-logo { max-width: 150px; max-height: 50px; object-fit: contain; }
+    .score-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(255,255,255,0.95); color: #667eea; font-weight: 700; font-size: 1.25rem; padding: 0.4rem 0.8rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); text-align: center; }
+    .score-badge small { display: block; font-size: 0.6rem; font-weight: 500; opacity: 0.8; }
+    .metrics-row { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .metric-badge { flex: 1; background: #f8f9fa; border-radius: 8px; padding: 0.5rem; text-align: center; }
+    .metric-badge .value { font-size: 1.1rem; font-weight: 700; color: #667eea; }
+    .metric-badge .label { font-size: 0.65rem; color: #6c757d; }
+    .metric-badge.highlight { background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%); }
+    .info-icon { cursor: help; opacity: 0.7; }
+    .info-icon:hover { opacity: 1; }
     .set-body { padding: 1.5rem; }
     .missing-count { font-size: 2rem; font-weight: 700; color: #667eea; margin-bottom: 0.5rem; }
     .rarity-bar { height: 8px; border-radius: 4px; margin-bottom: 0.5rem; }
@@ -86,18 +95,32 @@
           <div class="col-md-6 mb-2">
             <label class="form-label small text-muted mb-1">Sort By</label>
             <select id="sortBy" class="form-select">
-              <option value="score">Best Recommendation (Score)</option>
-              <option value="missing">Most Missing Pokémon</option>
+              <option value="pullChance">Best Pull Chance (Relative)</option>
+              <option value="density">Highest Missing % (Relative)</option>
+              <option value="score">Best Recommendation (Absolute)</option>
+              <option value="missing">Most Missing Pokémon (Absolute)</option>
               <option value="name">Set Name (A-Z)</option>
               <option value="dateNew">Release Date (Newest First)</option>
               <option value="dateOld">Release Date (Oldest First)</option>
             </select>
           </div>
           <div class="col-md-6 mb-2">
-            <label class="form-label small text-muted mb-1">Tip</label>
+            <label class="form-label small text-muted mb-1">What do the scores mean? <span class="info-icon" data-bs-toggle="collapse" data-bs-target="#metricsHelp">ℹ️</span></label>
             <div>
               <small class="text-muted">Click on any set to see missing cards</small>
             </div>
+          </div>
+        </div>
+        <div class="collapse" id="metricsHelp">
+          <div class="alert alert-info mt-3 mb-0">
+            <strong>Understanding the Metrics:</strong>
+            <ul class="mb-0 mt-2">
+              <li><strong>Pull Chance %</strong> — Likelihood that a pulled Pokémon will be NEW. Accounts for rarity (Common = easier to pull). <em>Higher = better chance of getting something new!</em></li>
+              <li><strong>Missing %</strong> — Simple percentage of unique Pokémon you still need (ignores rarity). <em>Higher = more of the set is useful.</em></li>
+              <li><strong>Abs. Score</strong> — Total weighted value of missing Pokémon. Larger sets score higher. <em>Use this to compare raw potential.</em></li>
+            </ul>
+            <hr class="my-2">
+            <small><strong>Tip:</strong> Use "Best Pull Chance" to find sets where you're most likely to pull a NEW Pokémon!</small>
           </div>
         </div>
       </div>
@@ -250,48 +273,65 @@
 
   function calculateRecommendations() {
     for (const set of setsData) {
-      let totalScore = 0;
+      let missingWeightedScore = 0;
+      let totalWeightedScore = 0;
       let missingByRarity = {};
       
-      // Group missing Pokémon by dexNum and find the lowest rarity (highest weight) for each
+      // Track all Pokémon and their best (highest weight) variant
+      const allPokemonMap = new Map();
       const missingPokemonMap = new Map();
 
       for (const pokemon of set.pokemon) {
-        // Find matching Pokémon using substring search
         const dexNum = findPokemonMatch(pokemon.name, dexMap);
-        if (!dexNum || ownedPokemon.has(dexNum)) {
-          continue; // Already owned
-        }
+        if (!dexNum) continue;
 
-        // Missing Pokémon - check if we already have this dexNum
-        if (!missingPokemonMap.has(dexNum)) {
-          missingPokemonMap.set(dexNum, []);
-        }
-        
-        // Check all card variants for this Pokémon to find the lowest rarity
+        // Find best variant (highest weight) for this Pokémon
+        let bestWeight = 0;
+        let bestRarity = 'Common';
         for (const card of pokemon.cards) {
           const rarity = card.rarity || 'Common';
           const weight = RARITY_WEIGHTS[rarity] || 0.01;
-          missingPokemonMap.get(dexNum).push({ rarity, weight });
+          if (weight > bestWeight) {
+            bestWeight = weight;
+            bestRarity = rarity;
+          }
+        }
+
+        // Track for total weighted score (all Pokémon)
+        if (!allPokemonMap.has(dexNum) || allPokemonMap.get(dexNum).weight < bestWeight) {
+          allPokemonMap.set(dexNum, { weight: bestWeight, rarity: bestRarity });
+        }
+
+        // Track missing Pokémon separately
+        if (!ownedPokemon.has(dexNum)) {
+          if (!missingPokemonMap.has(dexNum) || missingPokemonMap.get(dexNum).weight < bestWeight) {
+            missingPokemonMap.set(dexNum, { weight: bestWeight, rarity: bestRarity });
+          }
         }
       }
       
-      // For each unique missing Pokémon, use the lowest rarity (highest weight)
-      for (const [dexNum, variants] of missingPokemonMap.entries()) {
-        // Find the variant with the highest weight (easiest to obtain)
-        const bestVariant = variants.reduce((best, current) => 
-          current.weight > best.weight ? current : best
-        );
-        
-        totalScore += bestVariant.weight;
-        missingByRarity[bestVariant.rarity] = (missingByRarity[bestVariant.rarity] || 0) + 1;
+      // Calculate total weighted score for ALL Pokémon
+      for (const [dexNum, data] of allPokemonMap.entries()) {
+        totalWeightedScore += data.weight;
+      }
+      
+      // Calculate missing weighted score and rarity breakdown
+      for (const [dexNum, data] of missingPokemonMap.entries()) {
+        missingWeightedScore += data.weight;
+        missingByRarity[data.rarity] = (missingByRarity[data.rarity] || 0) + 1;
       }
 
-      set.score = totalScore;
+      set.score = missingWeightedScore;
+      set.totalWeightedScore = totalWeightedScore;
       set.missingCount = missingPokemonMap.size;
       set.missingByRarity = missingByRarity;
-      set.totalPokemon = set.pokemon.length;
+      set.totalPokemon = allPokemonMap.size;
       set.ownedCount = set.totalPokemon - set.missingCount;
+      
+      // Pull Chance %: What portion of expected pulls will be NEW Pokémon?
+      set.pullChance = totalWeightedScore > 0 ? (missingWeightedScore / totalWeightedScore) * 100 : 0;
+      // Simple missing percentage (without rarity weights)
+      set.missingDensity = set.totalPokemon > 0 ? (set.missingCount / set.totalPokemon) * 100 : 0;
     }
 
     // Update summary stats
@@ -375,6 +415,8 @@
     
     // Sort sets
     const sorted = [...setsData].sort((a, b) => {
+      if (sortBy === 'pullChance') return b.pullChance - a.pullChance;
+      if (sortBy === 'density') return b.missingDensity - a.missingDensity;
       if (sortBy === 'score') return b.score - a.score;
       if (sortBy === 'missing') return b.missingCount - a.missingCount;
       if (sortBy === 'name') return a.name.localeCompare(b.name);
@@ -399,11 +441,42 @@
       
       const scoreBadge = document.createElement('div');
       scoreBadge.className = 'score-badge';
-      scoreBadge.textContent = set.score.toFixed(1);
-      scoreBadge.title = 'Recommendation Score';
+      
+      // Dynamic badge based on selected sort
+      let badgeValue, badgeLabel, badgeTitle;
+      switch (sortBy) {
+        case 'pullChance':
+          badgeValue = `${set.pullChance.toFixed(1)}%`;
+          badgeLabel = 'pull chance';
+          badgeTitle = 'Pull Chance: Likelihood that a pulled Pokémon will be NEW';
+          break;
+        case 'density':
+          badgeValue = `${set.missingDensity.toFixed(1)}%`;
+          badgeLabel = 'missing %';
+          badgeTitle = 'Missing %: Percentage of set you still need';
+          break;
+        case 'score':
+          badgeValue = set.score.toFixed(1);
+          badgeLabel = 'abs. score';
+          badgeTitle = 'Absolute Score: Total weighted value of missing Pokémon';
+          break;
+        case 'missing':
+          badgeValue = set.missingCount;
+          badgeLabel = 'missing';
+          badgeTitle = 'Total missing Pokémon in this set';
+          break;
+        default:
+          badgeValue = `${set.pullChance.toFixed(1)}%`;
+          badgeLabel = 'pull chance';
+          badgeTitle = 'Pull Chance: Likelihood that a pulled Pokémon will be NEW';
+      }
+      scoreBadge.innerHTML = `${badgeValue}<small>${badgeLabel}</small>`;
+      scoreBadge.title = badgeTitle;
       
       header.innerHTML = `
-        ${set.logo ? `<img src="${set.logo}" alt="${set.name}" class="set-logo">` : ''}
+        <div class="set-logo-container">
+          ${set.logo ? `<img src="${set.logo}" alt="${set.name}" class="set-logo">` : ''}
+        </div>
         <h5 class="mb-1">${set.name}</h5>
         <small class="opacity-75">${set.series}</small>
       `;
@@ -414,9 +487,23 @@
       body.className = 'set-body';
 
       const missingHtml = `
+        <div class="metrics-row">
+          <div class="metric-badge highlight">
+            <div class="value">${set.pullChance.toFixed(1)}%</div>
+            <div class="label">Pull Chance</div>
+          </div>
+          <div class="metric-badge highlight">
+            <div class="value">${set.missingDensity.toFixed(1)}%</div>
+            <div class="label">Missing %</div>
+          </div>
+          <div class="metric-badge">
+            <div class="value">${set.score.toFixed(1)}</div>
+            <div class="label">Abs. Score</div>
+          </div>
+        </div>
         <div class="missing-count">${set.missingCount} Missing</div>
         <div class="text-muted small mb-3">
-          ${set.ownedCount} / ${set.totalPokemon} owned
+          ${set.ownedCount} / ${set.totalPokemon} Pok\u00e9mon owned in set
         </div>
       `;
 
