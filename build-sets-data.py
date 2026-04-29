@@ -194,7 +194,7 @@ def main():
     
     # Filter to specific series (set to None for all sets)
     # Examples: "Scarlet & Violet", "Sword & Shield", ["Scarlet & Violet", "Sword & Shield"]
-    SERIES_FILTER = ["Scarlet & Violet", "Mega Evolution"]
+    SERIES_FILTER = ["Sword & Shield", "Scarlet & Violet", "Mega Evolution"]
     
     if SERIES_FILTER:
         print(f"\nFiltering to series: {SERIES_FILTER}")

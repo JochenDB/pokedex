@@ -217,7 +217,7 @@ def main():
     
     # Filter to only Scarlet & Violet series (currently available for sale)
     # Change the filter to incrementally load
-    SERIES_FILTER = "Mega Evolution"
+    SERIES_FILTER = "Sword & Shield"
     print(f"\nFiltering to series: {SERIES_FILTER}")
     
     try:

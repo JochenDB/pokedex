@@ -37,6 +37,12 @@
     .pokemon-chip.owned { border-color: #28a745; background: #d4edda; }
     .pokemon-chip.missing { border-color: #dc3545; background: #f8d7da; }
     .filter-btn { margin: 0.25rem; }
+    .series-filter-container { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
+    .series-checkbox { display: flex; align-items: center; gap: 0.4rem; background: #f8f9fa; padding: 0.4rem 0.75rem; border-radius: 20px; cursor: pointer; transition: all 0.2s; border: 2px solid transparent; }
+    .series-checkbox:hover { background: #e9ecef; }
+    .series-checkbox input { cursor: pointer; }
+    .series-checkbox.checked { background: #667eea20; border-color: #667eea; }
+    .series-checkbox label { cursor: pointer; margin: 0; font-size: 0.875rem; font-weight: 500; }
     .modal-card-wrapper { border-radius: 12px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; background: white; }
     .modal-card-wrapper:hover { transform: translateY(-4px); box-shadow: 0 8px 16px rgba(0,0,0,0.1) !important; cursor: pointer; }
     .modal-card-image { width: 100%; height: auto; display: block; border-radius: 12px 12px 0 0; }
@@ -122,6 +128,16 @@
             <hr class="my-2">
             <small><strong>Tip:</strong> Use "Best Pull Chance" to find sets where you're most likely to pull a NEW Pokémon!</small>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Series Filter -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <label class="form-label small text-muted mb-2">Series Filter <small class="text-muted">(toggle to show/hide sets)</small></label>
+        <div id="seriesFilterContainer" class="series-filter-container">
+          <!-- Will be populated with JavaScript -->
         </div>
       </div>
     </div>
@@ -268,6 +284,86 @@
     }
 
     calculateRecommendations();
+    initializeSeriesFilter();
+    renderSets();
+  }
+
+  let selectedSeries = new Set();
+  let allSeries = [];
+
+  function initializeSeriesFilter() {
+    // Extract unique series from sets
+    const seriesMap = new Map();
+    for (const set of setsData) {
+      const series = set.series || 'Unknown';
+      if (!seriesMap.has(series)) {
+        seriesMap.set(series, { name: series, releaseDate: set.release_date });
+      } else {
+        // Keep the earliest release date for the series
+        const existing = seriesMap.get(series);
+        if (set.release_date && set.release_date < existing.releaseDate) {
+          existing.releaseDate = set.release_date;
+        }
+      }
+    }
+    
+    // Sort series by release date (newest first)
+    allSeries = Array.from(seriesMap.values()).sort((a, b) => {
+      if (!a.releaseDate) return 1;
+      if (!b.releaseDate) return -1;
+      return new Date(b.releaseDate) - new Date(a.releaseDate);
+    });
+    
+    // Default: select the 2 latest series
+    const latestTwo = allSeries.slice(0, 2).map(s => s.name);
+    selectedSeries = new Set(latestTwo);
+    
+    renderSeriesFilter();
+  }
+
+  function renderSeriesFilter() {
+    const container = document.getElementById('seriesFilterContainer');
+    container.innerHTML = '';
+    
+    for (const series of allSeries) {
+      const isChecked = selectedSeries.has(series.name);
+      
+      const checkboxDiv = document.createElement('div');
+      checkboxDiv.className = `series-checkbox ${isChecked ? 'checked' : ''}`;
+      checkboxDiv.onclick = (e) => {
+        // Prevent triggering when clicking the checkbox directly (handled by change event)
+        if (e.target.type !== 'checkbox') {
+          const cb = checkboxDiv.querySelector('input');
+          cb.checked = !cb.checked;
+          toggleSeries(series.name, cb.checked);
+        }
+      };
+      
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.id = `series-${series.name.replace(/\s+/g, '-')}`;
+      checkbox.checked = isChecked;
+      checkbox.onchange = (e) => {
+        checkboxDiv.classList.toggle('checked', e.target.checked);
+        toggleSeries(series.name, e.target.checked);
+      };
+      
+      const label = document.createElement('label');
+      label.htmlFor = checkbox.id;
+      label.textContent = series.name;
+      
+      checkboxDiv.appendChild(checkbox);
+      checkboxDiv.appendChild(label);
+      container.appendChild(checkboxDiv);
+    }
+  }
+
+  function toggleSeries(seriesName, isChecked) {
+    if (isChecked) {
+      selectedSeries.add(seriesName);
+    } else {
+      selectedSeries.delete(seriesName);
+    }
     renderSets();
   }
 
@@ -414,8 +510,22 @@
   function renderSets() {
     const sortBy = document.getElementById('sortBy').value;
     
+    // Filter sets by selected series
+    const filteredSets = setsData.filter(set => selectedSeries.has(set.series || 'Unknown'));
+    
+    // Calculate missing Pokemon count for filtered sets
+    const filteredMissingPokemon = new Set();
+    for (const set of filteredSets) {
+      for (const pokemon of set.pokemon) {
+        const dexNum = pokemon.dex_number || findPokemonMatch(pokemon.name, dexMap);
+        if (dexNum && !ownedPokemon.has(dexNum)) {
+          filteredMissingPokemon.add(dexNum);
+        }
+      }
+    }
+    
     // Sort sets
-    const sorted = [...setsData].sort((a, b) => {
+    const sorted = filteredSets.sort((a, b) => {
       if (sortBy === 'pullChance') return b.pullChance - a.pullChance;
       if (sortBy === 'density') return b.missingDensity - a.missingDensity;
       if (sortBy === 'score') return b.score - a.score;
@@ -428,6 +538,10 @@
 
     const grid = document.getElementById('setsGrid');
     grid.innerHTML = '';
+    
+    // Update visible stats
+    document.getElementById('totalSets').textContent = filteredSets.length;
+    document.getElementById('totalMissing').textContent = filteredMissingPokemon.size;
 
     for (const set of sorted) {
       const col = document.createElement('div');
@@ -537,6 +651,15 @@
       
       col.appendChild(card);
       grid.appendChild(col);
+    }
+    
+    // Show empty state if no sets match
+    if (sorted.length === 0) {
+      grid.innerHTML = `
+        <div class="col-12 text-center py-5">
+          <p class="text-muted">No sets selected. Toggle series filters above to show sets.</p>
+        </div>
+      `;
     }
   }
 
