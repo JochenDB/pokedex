@@ -335,6 +335,7 @@
         if (e.target.type !== 'checkbox') {
           const cb = checkboxDiv.querySelector('input');
           cb.checked = !cb.checked;
+          checkboxDiv.classList.toggle('checked', cb.checked);
           toggleSeries(series.name, cb.checked);
         }
       };
