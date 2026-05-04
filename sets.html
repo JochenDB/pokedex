@@ -330,28 +330,30 @@
       
       const checkboxDiv = document.createElement('div');
       checkboxDiv.className = `series-checkbox ${isChecked ? 'checked' : ''}`;
-      checkboxDiv.onclick = (e) => {
-        // Prevent triggering when clicking the checkbox directly (handled by change event)
-        if (e.target.type !== 'checkbox') {
-          const cb = checkboxDiv.querySelector('input');
-          cb.checked = !cb.checked;
-          checkboxDiv.classList.toggle('checked', cb.checked);
-          toggleSeries(series.name, cb.checked);
-        }
-      };
-      
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
       checkbox.id = `series-${series.name.replace(/\s+/g, '-')}`;
       checkbox.checked = isChecked;
+      
+      const label = document.createElement('label');
+      label.textContent = series.name;
+      
+      // Handle all clicks on the container div
+      checkboxDiv.onclick = (e) => {
+        // If clicking directly on checkbox, let its change event handle it
+        if (e.target === checkbox) return;
+        
+        // Toggle checkbox programmatically for clicks on div or label
+        checkbox.checked = !checkbox.checked;
+        checkboxDiv.classList.toggle('checked', checkbox.checked);
+        toggleSeries(series.name, checkbox.checked);
+      };
+      
+      // Handle checkbox change events (from direct clicks or keyboard)
       checkbox.onchange = (e) => {
         checkboxDiv.classList.toggle('checked', e.target.checked);
         toggleSeries(series.name, e.target.checked);
       };
-      
-      const label = document.createElement('label');
-      label.htmlFor = checkbox.id;
-      label.textContent = series.name;
       
       checkboxDiv.appendChild(checkbox);
       checkboxDiv.appendChild(label);
