@@ -279,8 +279,6 @@
     const unknownNames = [];
 
     for (const p of allOwnedProducts) {
-      if (!p?.is_owned) continue; // defensive; your data has is_owned true for owned
-      
       const dexNum = findPokemonMatch(p.product_name, dexMap);
       if (!dexNum) {
         unknownNames.push(p.product_name);

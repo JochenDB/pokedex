@@ -67,6 +67,12 @@ async function collectrBuildOwned({ collectionId } = {}) {
     market_price_diff: p.market_price_diff,
     market_price_percentage_diff: p.market_price_percentage_diff,
     total_products_owned_count: p.total_products_owned_count,
+    // dex.html filters on is_owned, so it MUST be carried through. The rest
+    // are used for display (product_sub_type) or kept for parity.
+    is_owned: p.is_owned,
+    is_card: p.is_card,
+    card_condition: p.card_condition,
+    product_sub_type: p.product_sub_type,
   }));
 
   return {
