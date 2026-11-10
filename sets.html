@@ -122,7 +122,7 @@
           <div class="alert alert-info mt-3 mb-0">
             <strong>Understanding the Metrics:</strong>
             <ul class="mb-0 mt-2">
-              <li><strong>Next-pack score</strong> — Estimated number of cards with a Pokémon you don't own yet among the 4 common and 3 uncommon slots of one pack: <code>4 × useful commons % + 3 × useful uncommons %</code>. Trainers and Special Energy count in the totals but are never useful. Foil slots (reverse holo, rare and higher) are not included. Two useful cards can still be the same species. <em>Higher = more new Pokémon expected from the next pack.</em> Sets with another pack format or without common/uncommon totals are marked <strong>Fallback</strong> and are ranked after the others by Pull Chance %.</li>
+              <li><strong>Next-pack score</strong> — Estimated number of cards with a Pokémon you don't own yet among the common and uncommon slots of one pack: <code>4 × useful commons % + 3 × useful uncommons %</code> for Scarlet &amp; Violet and Mega Evolution, <code>5 × useful commons % + 3 × useful uncommons %</code> for Sword &amp; Shield. Trainers and Special Energy count in the totals but are never useful. Foil slots (reverse holo, rare and higher) are not included. Two useful cards can still be the same species. <em>Higher = more new Pokémon expected from the next pack.</em> Sets with another pack format or without common/uncommon totals are marked <strong>Fallback</strong> and are ranked after the others by Pull Chance %.</li>
               <li><strong>Pull Chance %</strong> — Likelihood that a pulled Pokémon will be NEW. Accounts for rarity (Common = easier to pull). <em>Higher = better chance of getting something new!</em></li>
               <li><strong>Missing %</strong> — Simple percentage of unique Pokémon you still need (ignores rarity). <em>Higher = more of the set is useful.</em></li>
               <li><strong>Abs. Score</strong> — Total weighted value of missing Pokémon. Larger sets score higher. <em>Use this to compare raw potential.</em></li>
@@ -238,16 +238,27 @@
   // Common/uncommon slots per booster pack, used for the next-pack score.
   const PACK_PROFILES = {
     modern: { Common: 4, Uncommon: 3 },
+    swsh: { Common: 5, Uncommon: 3 },
   };
 
-  // Sword & Shield packs have 5 commons, so they are left out and use the fallback.
   const SERIES_PACK_PROFILE = {
+    'Sword & Shield': 'swsh',
     'Scarlet & Violet': 'modern',
     'Mega Evolution': 'modern',
   };
 
-  // Sets that don't follow their series' pack format (promos, energy sets, special formats).
+  // Sets that don't follow their series' pack format (promos, energy sets, special formats)
+  // and subsets that are pulled from another set's packs (Trainer Gallery, Shiny Vault, Galarian Gallery).
   const SET_PACK_PROFILE_OVERRIDES = {
+    swshp: null,
+    swsh45sv: null,
+    swsh9tg: null,
+    swsh10tg: null,
+    swsh11tg: null,
+    swsh12tg: null,
+    swsh12pt5gg: null,
+    cel25: null,
+    cel25c: null,
     svp: null,
     sve: null,
     me55: null,
@@ -660,7 +671,7 @@
           if (set.nextPackScore !== null) {
             badgeValue = set.nextPackScore.toFixed(2);
             badgeLabel = 'next-pack score';
-            badgeTitle = 'Next-pack score: estimated cards with a new Pokémon in the 4 common and 3 uncommon slots (foil slots not included)';
+            badgeTitle = 'Next-pack score: estimated cards with a new Pokémon in the common and uncommon slots (foil slots not included)';
           } else {
             badgeValue = `${set.pullChance.toFixed(1)}%`;
             badgeLabel = 'fallback: pull chance';
