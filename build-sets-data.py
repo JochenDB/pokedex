@@ -66,6 +66,21 @@ def load_cards_for_set(set_id):
         return json.load(f)
 
 
+def count_rarity_totals(cards):
+    """Count distinct card numbers per rarity, including Trainers and Special Energy.
+
+    Basic Energy is left out because it has its own pack slot. Reverse holos are
+    not separate entries in the source data, so they are not counted twice.
+    """
+    numbers_by_rarity = defaultdict(set)
+    for card in cards:
+        if card.get('supertype') == 'Energy' and 'Basic' in card.get('subtypes', []):
+            continue
+        if rarity := card.get('rarity'):
+            numbers_by_rarity[rarity].add(card.get('number'))
+    return {rarity: len(numbers) for rarity, numbers in sorted(numbers_by_rarity.items())}
+
+
 def normalize_pokemon_name(name):
     """Normalize Pokémon name for grouping cards (fallback when no dex number)"""
     if not name:
@@ -112,6 +127,7 @@ def build_sets_data(series_filter=None):
             'total_cards': set_info.get('total', 0),
             'logo': set_info.get('images', {}).get('logo', ''),
             'symbol': set_info.get('images', {}).get('symbol', ''),
+            'rarity_totals': count_rarity_totals(cards),
             'pokemon': []
         }
         

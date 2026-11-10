@@ -7,6 +7,9 @@
     "total_cards": 304,
     "logo": "https://images.pokemontcg.io/swshp/logo.png",
     "symbol": "https://images.pokemontcg.io/swshp/symbol.png",
+    "rarity_totals": {
+      "Promo": 304
+    },
     "pokemon": [
       {
         "name": "grookey",
@@ -6189,6 +6192,17 @@
     "total_cards": 216,
     "logo": "https://images.pokemontcg.io/swsh1/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh1/symbol.png",
+    "rarity_totals": {
+      "Common": 60,
+      "Rare": 32,
+      "Rare Holo": 17,
+      "Rare Holo V": 17,
+      "Rare Holo VMAX": 4,
+      "Rare Rainbow": 8,
+      "Rare Secret": 6,
+      "Rare Ultra": 16,
+      "Uncommon": 56
+    },
     "pokemon": [
       {
         "name": "celebi",
@@ -6394,7 +6408,7 @@
         "dex_numbers": [
           781
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -6757,7 +6771,7 @@
         "dex_numbers": [
           324
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -7322,7 +7336,7 @@
         "dex_numbers": [
           131
         ],
-        "rarity": "Rare",
+        "rarity": "Rare Rainbow",
         "card_count": 5,
         "cards": [
           {
@@ -7664,7 +7678,7 @@
         "dex_numbers": [
           845
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 3,
         "cards": [
           {
@@ -8080,7 +8094,7 @@
         "dex_numbers": [
           877
         ],
-        "rarity": "Rare",
+        "rarity": "Rare Rainbow",
         "card_count": 5,
         "cards": [
           {
@@ -8298,7 +8312,7 @@
         "dex_numbers": [
           202
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -8445,7 +8459,7 @@
         "dex_numbers": [
           876
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -9006,7 +9020,7 @@
         "dex_numbers": [
           874
         ],
-        "rarity": "Rare",
+        "rarity": "Rare Rainbow",
         "card_count": 5,
         "cards": [
           {
@@ -9172,7 +9186,7 @@
         "dex_numbers": [
           302
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -9657,7 +9671,7 @@
         "dex_numbers": [
           888
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 3,
         "cards": [
           {
@@ -9716,7 +9730,7 @@
         "dex_numbers": [
           889
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 3,
         "cards": [
           {
@@ -9775,7 +9789,7 @@
         "dex_numbers": [
           143
         ],
-        "rarity": "Rare",
+        "rarity": "Rare Rainbow",
         "card_count": 5,
         "cards": [
           {
@@ -10157,6 +10171,17 @@
     "total_cards": 209,
     "logo": "https://images.pokemontcg.io/swsh2/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh2/symbol.png",
+    "rarity_totals": {
+      "Common": 50,
+      "Rare": 32,
+      "Rare Holo": 18,
+      "Rare Holo V": 16,
+      "Rare Holo VMAX": 7,
+      "Rare Rainbow": 11,
+      "Rare Secret": 6,
+      "Rare Ultra": 18,
+      "Uncommon": 51
+    },
     "pokemon": [
       {
         "name": "caterpie",
@@ -10580,7 +10605,7 @@
         "dex_numbers": [
           812
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -10653,7 +10678,7 @@
         "dex_numbers": [
           830
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -10815,7 +10840,7 @@
         "dex_numbers": [
           38
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 3,
         "cards": [
           {
@@ -11081,7 +11106,7 @@
         "dex_numbers": [
           815
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -11310,7 +11335,7 @@
         "dex_numbers": [
           350
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -11483,7 +11508,7 @@
         "dex_numbers": [
           818
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -11634,7 +11659,7 @@
         "dex_numbers": [
           875
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Holo",
         "card_count": 2,
         "cards": [
           {
@@ -11962,7 +11987,7 @@
         "dex_numbers": [
           836
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -12031,7 +12056,7 @@
         "dex_numbers": [
           849
         ],
-        "rarity": "Rare",
+        "rarity": "Rare Rainbow",
         "card_count": 5,
         "cards": [
           {
@@ -12614,7 +12639,7 @@
         "dex_numbers": [
           887
         ],
-        "rarity": "Rare Rainbow",
+        "rarity": "Rare Holo",
         "card_count": 5,
         "cards": [
           {
@@ -13066,7 +13091,7 @@
         "dex_numbers": [
           844
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -13109,7 +13134,7 @@
         "dex_numbers": [
           870
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Uncommon",
         "card_count": 3,
         "cards": [
           {
@@ -13427,7 +13452,7 @@
         "dex_numbers": [
           687
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -13853,7 +13878,7 @@
         "dex_numbers": [
           879
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -14316,7 +14341,7 @@
         "dex_numbers": [
           832
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -14389,6 +14414,17 @@
     "total_cards": 201,
     "logo": "https://images.pokemontcg.io/swsh3/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh3/symbol.png",
+    "rarity_totals": {
+      "Common": 53,
+      "Rare": 34,
+      "Rare Holo": 18,
+      "Rare Holo V": 14,
+      "Rare Holo VMAX": 7,
+      "Rare Rainbow": 7,
+      "Rare Secret": 5,
+      "Rare Ultra": 13,
+      "Uncommon": 50
+    },
     "pokemon": [
       {
         "name": "butterfree",
@@ -14396,7 +14432,7 @@
         "dex_numbers": [
           12
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -14927,7 +14963,7 @@
         "dex_numbers": [
           229
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -15271,7 +15307,7 @@
         "dex_numbers": [
           851
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -15968,7 +16004,7 @@
         "dex_numbers": [
           738
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -16896,7 +16932,7 @@
         "dex_numbers": [
           464
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -17148,7 +17184,7 @@
         "dex_numbers": [
           169
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -17524,7 +17560,7 @@
         "dex_numbers": [
           212
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -17805,7 +17841,7 @@
         "dex_numbers": [
           618
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -18212,7 +18248,7 @@
         "dex_numbers": [
           373
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -18653,6 +18689,16 @@
     "total_cards": 80,
     "logo": "https://images.pokemontcg.io/swsh35/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh35/symbol.png",
+    "rarity_totals": {
+      "Common": 20,
+      "Rare Holo": 10,
+      "Rare Holo V": 11,
+      "Rare Holo VMAX": 3,
+      "Rare Rainbow": 5,
+      "Rare Secret": 2,
+      "Rare Ultra": 5,
+      "Uncommon": 24
+    },
     "pokemon": [
       {
         "name": "venusaur",
@@ -19002,7 +19048,7 @@
         "dex_numbers": [
           834
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -19075,7 +19121,7 @@
         "dex_numbers": [
           282
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -19226,7 +19272,7 @@
         "dex_numbers": [
           864
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -19520,7 +19566,7 @@
         "dex_numbers": [
           853
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -20052,6 +20098,18 @@
     "total_cards": 203,
     "logo": "https://images.pokemontcg.io/swsh4/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh4/symbol.png",
+    "rarity_totals": {
+      "Amazing Rare": 6,
+      "Common": 44,
+      "Rare": 33,
+      "Rare Holo": 19,
+      "Rare Holo V": 11,
+      "Rare Holo VMAX": 6,
+      "Rare Rainbow": 12,
+      "Rare Secret": 6,
+      "Rare Ultra": 20,
+      "Uncommon": 46
+    },
     "pokemon": [
       {
         "name": "weedle",
@@ -20553,7 +20611,7 @@
         "dex_numbers": [
           826
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -20626,7 +20684,7 @@
         "dex_numbers": [
           893
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -20825,7 +20883,7 @@
         "dex_numbers": [
           663
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -21024,7 +21082,7 @@
         "dex_numbers": [
           555
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -21227,7 +21285,7 @@
         "dex_numbers": [
           25
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -21404,7 +21462,7 @@
         "dex_numbers": [
           181
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -22695,7 +22753,7 @@
         "dex_numbers": [
           839
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -22924,7 +22982,7 @@
         "dex_numbers": [
           452
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -23175,7 +23233,7 @@
         "dex_numbers": [
           208
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -23478,7 +23536,7 @@
         "dex_numbers": [
           681
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -23863,7 +23921,7 @@
         "dex_numbers": [
           468
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -24150,6 +24208,17 @@
     "total_cards": 73,
     "logo": "https://images.pokemontcg.io/swsh45/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh45/symbol.png",
+    "rarity_totals": {
+      "Amazing Rare": 3,
+      "Common": 18,
+      "Rare": 8,
+      "Rare Holo": 7,
+      "Rare Holo V": 8,
+      "Rare Holo VMAX": 6,
+      "Rare Rainbow": 1,
+      "Rare Ultra": 9,
+      "Uncommon": 13
+    },
     "pokemon": [
       {
         "name": "yanma",
@@ -24839,7 +24908,7 @@
         "dex_numbers": [
           845
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Uncommon",
         "card_count": 3,
         "cards": [
           {
@@ -25124,7 +25193,7 @@
         "dex_numbers": [
           876
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Holo",
         "card_count": 2,
         "cards": [
           {
@@ -25557,6 +25626,12 @@
     "total_cards": 122,
     "logo": "https://images.pokemontcg.io/swsh45sv/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh45sv/symbol.png",
+    "rarity_totals": {
+      "Rare Holo V": 9,
+      "Rare Holo VMAX": 7,
+      "Rare Secret": 2,
+      "Rare Shiny": 104
+    },
     "pokemon": [
       {
         "name": "rowlet",
@@ -25694,7 +25769,7 @@
         "dex_numbers": [
           812
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Shiny",
         "card_count": 3,
         "cards": [
           {
@@ -26063,7 +26138,7 @@
         "dex_numbers": [
           851
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Shiny",
         "card_count": 3,
         "cards": [
           {
@@ -26692,7 +26767,7 @@
         "dex_numbers": [
           849
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Shiny",
         "card_count": 3,
         "cards": [
           {
@@ -27165,7 +27240,7 @@
         "dex_numbers": [
           876
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Shiny",
         "card_count": 2,
         "cards": [
           {
@@ -27571,7 +27646,7 @@
         "dex_numbers": [
           870
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Shiny",
         "card_count": 2,
         "cards": [
           {
@@ -27873,7 +27948,7 @@
         "dex_numbers": [
           861
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Shiny",
         "card_count": 3,
         "cards": [
           {
@@ -28398,7 +28473,7 @@
         "dex_numbers": [
           832
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Shiny",
         "card_count": 2,
         "cards": [
           {
@@ -28596,6 +28671,17 @@
     "total_cards": 183,
     "logo": "https://images.pokemontcg.io/swsh5/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh5/symbol.png",
+    "rarity_totals": {
+      "Common": 41,
+      "Rare": 20,
+      "Rare Holo": 16,
+      "Rare Holo V": 12,
+      "Rare Holo VMAX": 6,
+      "Rare Rainbow": 14,
+      "Rare Secret": 6,
+      "Rare Ultra": 22,
+      "Uncommon": 46
+    },
     "pokemon": [
       {
         "name": "bellsprout",
@@ -28733,7 +28819,7 @@
         "dex_numbers": [
           402
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -29063,7 +29149,7 @@
         "dex_numbers": [
           841
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -29162,7 +29248,7 @@
         "dex_numbers": [
           494
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -29603,7 +29689,7 @@
         "dex_numbers": [
           224
         ],
-        "rarity": "Rare Holo",
+        "rarity": "Rare Secret",
         "card_count": 2,
         "cards": [
           {
@@ -29997,7 +30083,7 @@
         "dex_numbers": [
           785
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -30330,7 +30416,7 @@
         "dex_numbers": [
           778
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -30373,7 +30459,7 @@
         "dex_numbers": [
           800
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -31360,7 +31446,7 @@
         "dex_numbers": [
           229
         ],
-        "rarity": "Rare Holo",
+        "rarity": "Rare Secret",
         "card_count": 2,
         "cards": [
           {
@@ -31741,7 +31827,7 @@
         "dex_numbers": [
           823
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -31970,7 +32056,7 @@
         "dex_numbers": [
           508
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -32095,6 +32181,17 @@
     "total_cards": 233,
     "logo": "https://images.pokemontcg.io/swsh6/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh6/symbol.png",
+    "rarity_totals": {
+      "Common": 43,
+      "Rare": 23,
+      "Rare Holo": 24,
+      "Rare Holo V": 15,
+      "Rare Holo VMAX": 8,
+      "Rare Rainbow": 23,
+      "Rare Secret": 9,
+      "Rare Ultra": 39,
+      "Uncommon": 46
+    },
     "pokemon": [
       {
         "name": "weedle",
@@ -32262,7 +32359,7 @@
         "dex_numbers": [
           251
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -32842,7 +32939,7 @@
         "dex_numbers": [
           721
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -34707,7 +34804,7 @@
         "dex_numbers": [
           844
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -35173,7 +35270,7 @@
         "dex_numbers": [
           510
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -35372,7 +35469,7 @@
         "dex_numbers": [
           376
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -36016,6 +36113,17 @@
     "total_cards": 237,
     "logo": "https://images.pokemontcg.io/swsh7/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh7/symbol.png",
+    "rarity_totals": {
+      "Common": 42,
+      "Rare": 19,
+      "Rare Holo": 20,
+      "Rare Holo V": 18,
+      "Rare Holo VMAX": 15,
+      "Rare Rainbow": 22,
+      "Rare Secret": 9,
+      "Rare Ultra": 38,
+      "Uncommon": 51
+    },
     "pokemon": [
       {
         "name": "pinsir",
@@ -36391,7 +36499,7 @@
         "dex_numbers": [
           709
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -36639,7 +36747,7 @@
         "dex_numbers": [
           637
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -36838,7 +36946,7 @@
         "dex_numbers": [
           130
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -36955,7 +37063,7 @@
         "dex_numbers": [
           245
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -37469,7 +37577,7 @@
         "dex_numbers": [
           883
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -37762,7 +37870,7 @@
         "dex_numbers": [
           880
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -38799,7 +38907,7 @@
         "dex_numbers": [
           745
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -39112,7 +39220,7 @@
         "dex_numbers": [
           569
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -40479,6 +40587,13 @@
     "total_cards": 25,
     "logo": "https://images.pokemontcg.io/cel25/logo.png",
     "symbol": "https://images.pokemontcg.io/cel25/symbol.png",
+    "rarity_totals": {
+      "Rare": 12,
+      "Rare Holo": 6,
+      "Rare Holo V": 4,
+      "Rare Holo VMAX": 2,
+      "Rare Ultra": 1
+    },
     "pokemon": [
       {
         "name": "ho-oh",
@@ -41037,6 +41152,9 @@
     "total_cards": 25,
     "logo": "https://images.pokemontcg.io/cel25c/logo.png",
     "symbol": "https://images.pokemontcg.io/cel25c/symbol.png",
+    "rarity_totals": {
+      "Classic Collection": 22
+    },
     "pokemon": [
       {
         "name": "blastoise",
@@ -41631,6 +41749,17 @@
     "total_cards": 284,
     "logo": "https://images.pokemontcg.io/swsh8/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh8/symbol.png",
+    "rarity_totals": {
+      "Common": 89,
+      "Rare": 32,
+      "Rare Holo": 13,
+      "Rare Holo V": 19,
+      "Rare Holo VMAX": 8,
+      "Rare Rainbow": 15,
+      "Rare Secret": 3,
+      "Rare Ultra": 20,
+      "Uncommon": 83
+    },
     "pokemon": [
       {
         "name": "caterpie",
@@ -41742,7 +41871,7 @@
         "dex_numbers": [
           286
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -42151,7 +42280,7 @@
         "dex_numbers": [
           763
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -42607,7 +42736,7 @@
         "dex_numbers": [
           609
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -43563,7 +43692,7 @@
         "dex_numbers": [
           740
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -44295,7 +44424,7 @@
         "dex_numbers": [
           836
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -45706,7 +45835,7 @@
         "dex_numbers": [
           870
         ],
-        "rarity": "Common",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -47705,6 +47834,18 @@
     "total_cards": 186,
     "logo": "https://images.pokemontcg.io/swsh9/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh9/symbol.png",
+    "rarity_totals": {
+      "Common": 42,
+      "Rare": 26,
+      "Rare Holo": 10,
+      "Rare Holo V": 20,
+      "Rare Holo VMAX": 3,
+      "Rare Holo VSTAR": 4,
+      "Rare Rainbow": 8,
+      "Rare Secret": 6,
+      "Rare Ultra": 21,
+      "Uncommon": 46
+    },
     "pokemon": [
       {
         "name": "exeggcute",
@@ -48054,7 +48195,7 @@
         "dex_numbers": [
           492
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -48321,7 +48462,7 @@
         "dex_numbers": [
           146
         ],
-        "rarity": "Rare Holo",
+        "rarity": "Rare Secret",
         "card_count": 2,
         "cards": [
           {
@@ -48987,7 +49128,7 @@
         "dex_numbers": [
           26
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -49317,7 +49458,7 @@
         "dex_numbers": [
           210
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -49516,7 +49657,7 @@
         "dex_numbers": [
           547
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -49839,7 +49980,7 @@
         "dex_numbers": [
           330
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 3,
         "cards": [
           {
@@ -50597,7 +50738,7 @@
         "dex_numbers": [
           889
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -51351,6 +51492,13 @@
     "total_cards": 30,
     "logo": "https://images.pokemontcg.io/swsh9tg/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh9tg/symbol.png",
+    "rarity_totals": {
+      "Rare Holo V": 6,
+      "Rare Holo VMAX": 5,
+      "Rare Secret": 2,
+      "Rare Ultra": 5,
+      "Trainer Gallery Rare Holo": 12
+    },
     "pokemon": [
       {
         "name": "flareon",
@@ -51785,7 +51933,7 @@
         "dex_numbers": [
           892
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Secret",
         "card_count": 6,
         "cards": [
           {
@@ -51942,6 +52090,19 @@
     "total_cards": 216,
     "logo": "https://images.pokemontcg.io/swsh10/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh10/symbol.png",
+    "rarity_totals": {
+      "Common": 40,
+      "Radiant Rare": 3,
+      "Rare": 21,
+      "Rare Holo": 20,
+      "Rare Holo V": 19,
+      "Rare Holo VMAX": 2,
+      "Rare Holo VSTAR": 7,
+      "Rare Rainbow": 18,
+      "Rare Secret": 9,
+      "Rare Ultra": 30,
+      "Uncommon": 47
+    },
     "pokemon": [
       {
         "name": "beedrill",
@@ -52762,7 +52923,7 @@
         "dex_numbers": [
           121
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -53338,7 +53499,7 @@
         "dex_numbers": [
           405
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -53407,7 +53568,7 @@
         "dex_numbers": [
           157
         ],
-        "rarity": "Rare Rainbow",
+        "rarity": "Rare Holo",
         "card_count": 5,
         "cards": [
           {
@@ -53859,7 +54020,7 @@
         "dex_numbers": [
           899
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 3,
         "cards": [
           {
@@ -54268,7 +54429,7 @@
         "dex_numbers": [
           724
         ],
-        "rarity": "Rare Rainbow",
+        "rarity": "Rare Holo",
         "card_count": 5,
         "cards": [
           {
@@ -54356,7 +54517,7 @@
         "dex_numbers": [
           900
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Holo",
         "card_count": 4,
         "cards": [
           {
@@ -54469,7 +54630,7 @@
         "dex_numbers": [
           904
         ],
-        "rarity": "Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -55233,7 +55394,7 @@
         "dex_numbers": [
           445
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -55666,7 +55827,7 @@
         "dex_numbers": [
           765
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -55767,6 +55928,13 @@
     "total_cards": 30,
     "logo": "https://images.pokemontcg.io/swsh10tg/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
+    "rarity_totals": {
+      "Rare Holo V": 9,
+      "Rare Holo VMAX": 2,
+      "Rare Secret": 2,
+      "Rare Ultra": 5,
+      "Trainer Gallery Rare Holo": 12
+    },
     "pokemon": [
       {
         "name": "abomasnow",
@@ -56115,7 +56283,7 @@
         "dex_numbers": [
           898
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Secret",
         "card_count": 6,
         "cards": [
           {
@@ -56384,6 +56552,18 @@
     "total_cards": 88,
     "logo": "https://images.pokemontcg.io/pgo/logo.png",
     "symbol": "https://images.pokemontcg.io/pgo/symbol.png",
+    "rarity_totals": {
+      "Common": 22,
+      "Radiant Rare": 3,
+      "Rare Holo": 16,
+      "Rare Holo V": 6,
+      "Rare Holo VMAX": 1,
+      "Rare Holo VSTAR": 2,
+      "Rare Rainbow": 7,
+      "Rare Secret": 3,
+      "Rare Ultra": 8,
+      "Uncommon": 20
+    },
     "pokemon": [
       {
         "name": "bulbasaur",
@@ -56485,7 +56665,7 @@
         "dex_numbers": [
           103
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -57054,7 +57234,7 @@
         "dex_numbers": [
           25
         ],
-        "rarity": "Common",
+        "rarity": "Rare Holo",
         "card_count": 2,
         "cards": [
           {
@@ -57606,7 +57786,7 @@
         "dex_numbers": [
           809
         ],
-        "rarity": "Rare Rainbow",
+        "rarity": "Rare Holo",
         "card_count": 5,
         "cards": [
           {
@@ -57694,7 +57874,7 @@
         "dex_numbers": [
           149
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -57949,7 +58129,7 @@
         "dex_numbers": [
           289
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -58126,6 +58306,19 @@
     "total_cards": 217,
     "logo": "https://images.pokemontcg.io/swsh11/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh11/symbol.png",
+    "rarity_totals": {
+      "Common": 49,
+      "Radiant Rare": 3,
+      "Rare": 28,
+      "Rare Holo": 22,
+      "Rare Holo V": 12,
+      "Rare Holo VMAX": 1,
+      "Rare Holo VSTAR": 6,
+      "Rare Rainbow": 15,
+      "Rare Secret": 6,
+      "Rare Ultra": 25,
+      "Uncommon": 50
+    },
     "pokemon": [
       {
         "name": "oddish",
@@ -58809,7 +59002,7 @@
         "dex_numbers": [
           655
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -59372,7 +59565,7 @@
         "dex_numbers": [
           646
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -59601,7 +59794,7 @@
         "dex_numbers": [
           462
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -60176,7 +60369,7 @@
         "dex_numbers": [
           571
         ],
-        "rarity": "Rare Secret",
+        "rarity": "Rare Holo",
         "card_count": 5,
         "cards": [
           {
@@ -60408,7 +60601,7 @@
         "dex_numbers": [
           905
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -61398,7 +61591,7 @@
         "dex_numbers": [
           452
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -61896,7 +62089,7 @@
         "dex_numbers": [
           706
         ],
-        "rarity": "Rare Rainbow",
+        "rarity": "Rare Holo",
         "card_count": 5,
         "cards": [
           {
@@ -61984,7 +62177,7 @@
         "dex_numbers": [
           18
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -62397,6 +62590,13 @@
     "total_cards": 30,
     "logo": "https://images.pokemontcg.io/swsh11tg/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh11tg/symbol.png",
+    "rarity_totals": {
+      "Rare Holo V": 7,
+      "Rare Holo VMAX": 4,
+      "Rare Secret": 2,
+      "Rare Ultra": 6,
+      "Trainer Gallery Rare Holo": 11
+    },
     "pokemon": [
       {
         "name": "parasect",
@@ -62508,7 +62708,7 @@
         "dex_numbers": [
           25
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Secret",
         "card_count": 4,
         "cards": [
           {
@@ -62976,6 +63176,19 @@
     "total_cards": 215,
     "logo": "https://images.pokemontcg.io/swsh12/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh12/symbol.png",
+    "rarity_totals": {
+      "Common": 53,
+      "Radiant Rare": 3,
+      "Rare": 21,
+      "Rare Holo": 14,
+      "Rare Holo V": 15,
+      "Rare Holo VMAX": 1,
+      "Rare Holo VSTAR": 6,
+      "Rare Rainbow": 14,
+      "Rare Secret": 6,
+      "Rare Ultra": 26,
+      "Uncommon": 56
+    },
     "pokemon": [
       {
         "name": "venonat",
@@ -63383,7 +63596,7 @@
         "dex_numbers": [
           652
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -63593,7 +63806,7 @@
         "dex_numbers": [
           59
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 3,
         "cards": [
           {
@@ -63729,7 +63942,7 @@
         "dex_numbers": [
           643
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -63980,7 +64193,7 @@
         "dex_numbers": [
           139
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -64569,7 +64782,7 @@
         "dex_numbers": [
           894
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -64966,7 +65179,7 @@
         "dex_numbers": [
           303
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 4,
         "cards": [
           {
@@ -66504,7 +66717,7 @@
         "dex_numbers": [
           801
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -66922,7 +67135,7 @@
         "dex_numbers": [
           250
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Ultra",
         "card_count": 2,
         "cards": [
           {
@@ -67229,6 +67442,13 @@
     "total_cards": 30,
     "logo": "https://images.pokemontcg.io/swsh12tg/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh12tg/symbol.png",
+    "rarity_totals": {
+      "Rare Holo V": 7,
+      "Rare Holo VMAX": 4,
+      "Rare Secret": 2,
+      "Rare Ultra": 6,
+      "Trainer Gallery Rare Holo": 11
+    },
     "pokemon": [
       {
         "name": "braixen",
@@ -67720,7 +67940,7 @@
         "dex_numbers": [
           384
         ],
-        "rarity": "Rare Holo VMAX",
+        "rarity": "Rare Secret",
         "card_count": 2,
         "cards": [
           {
@@ -67763,7 +67983,7 @@
         "dex_numbers": [
           884
         ],
-        "rarity": "Rare Holo VMAX",
+        "rarity": "Rare Secret",
         "card_count": 2,
         "cards": [
           {
@@ -67837,6 +68057,18 @@
     "total_cards": 160,
     "logo": "https://images.pokemontcg.io/swsh12pt5/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh12pt5/symbol.png",
+    "rarity_totals": {
+      "Common": 42,
+      "Radiant Rare": 3,
+      "Rare": 22,
+      "Rare Holo": 20,
+      "Rare Holo V": 17,
+      "Rare Holo VMAX": 5,
+      "Rare Holo VSTAR": 8,
+      "Rare Secret": 1,
+      "Rare Ultra": 5,
+      "Uncommon": 29
+    },
     "pokemon": [
       {
         "name": "oddish",
@@ -68714,7 +68946,7 @@
         "dex_numbers": [
           382
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Holo",
         "card_count": 2,
         "cards": [
           {
@@ -69082,7 +69314,7 @@
         "dex_numbers": [
           807
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Holo VSTAR",
         "card_count": 4,
         "cards": [
           {
@@ -70123,7 +70355,7 @@
         "dex_numbers": [
           888
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Holo",
         "card_count": 3,
         "cards": [
           {
@@ -70180,7 +70412,7 @@
         "dex_numbers": [
           889
         ],
-        "rarity": "Rare Holo V",
+        "rarity": "Rare Holo",
         "card_count": 3,
         "cards": [
           {
@@ -70833,6 +71065,14 @@
     "total_cards": 70,
     "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png",
     "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
+    "rarity_totals": {
+      "Rare Holo V": 9,
+      "Rare Holo VMAX": 3,
+      "Rare Holo VSTAR": 10,
+      "Rare Secret": 4,
+      "Rare Ultra": 10,
+      "Trainer Gallery Rare Holo": 34
+    },
     "pokemon": [
       {
         "name": "hisuian voltorb",
@@ -71128,7 +71368,7 @@
         "dex_numbers": [
           386
         ],
-        "rarity": "Rare Holo VMAX",
+        "rarity": "Trainer Gallery Rare Holo",
         "card_count": 3,
         "cards": [
           {
@@ -72376,6 +72616,9 @@
     "total_cards": 75,
     "logo": "https://images.pokemontcg.io/svp/logo.png",
     "symbol": "https://images.pokemontcg.io/svp/symbol.png",
+    "rarity_totals": {
+      "Promo": 165
+    },
     "pokemon": [
       {
         "name": "sprigatito",
@@ -76175,6 +76418,7 @@
     "total_cards": 8,
     "logo": "https://images.pokemontcg.io/sve/logo.png",
     "symbol": "https://images.pokemontcg.io/sve/symbol.png",
+    "rarity_totals": {},
     "pokemon": []
   },
   {
@@ -76185,6 +76429,16 @@
     "total_cards": 258,
     "logo": "https://images.pokemontcg.io/sv1/logo.png",
     "symbol": "https://images.pokemontcg.io/sv1/symbol.png",
+    "rarity_totals": {
+      "Common": 105,
+      "Double Rare": 12,
+      "Hyper Rare": 4,
+      "Illustration Rare": 24,
+      "Rare": 21,
+      "Special Illustration Rare": 10,
+      "Ultra Rare": 20,
+      "Uncommon": 60
+    },
     "pokemon": [
       {
         "name": "pineco",
@@ -76653,7 +76907,7 @@
         "dex_numbers": [
           918
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -76943,7 +77197,7 @@
         "dex_numbers": [
           952
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -77025,7 +77279,7 @@
         "dex_numbers": [
           59
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -77401,7 +77655,7 @@
         "dex_numbers": [
           130
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -77963,7 +78217,7 @@
         "dex_numbers": [
           462
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -78058,7 +78312,7 @@
         "dex_numbers": [
           417
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -78367,7 +78621,7 @@
         "dex_numbers": [
           1008
         ],
-        "rarity": "Rare",
+        "rarity": "Double Rare",
         "card_count": 5,
         "cards": [
           {
@@ -78606,7 +78860,7 @@
         "dex_numbers": [
           282
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -78691,7 +78945,7 @@
         "dex_numbers": [
           354
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -79627,7 +79881,7 @@
         "dex_numbers": [
           984
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -79686,7 +79940,7 @@
         "dex_numbers": [
           1007
         ],
-        "rarity": "Rare",
+        "rarity": "Double Rare",
         "card_count": 5,
         "cards": [
           {
@@ -79906,7 +80160,7 @@
         "dex_numbers": [
           454
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -80083,7 +80337,7 @@
         "dex_numbers": [
           943
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -80124,7 +80378,7 @@
         "dex_numbers": [
           962
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -80258,7 +80512,7 @@
         "dex_numbers": [
           990
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -80369,7 +80623,7 @@
         "dex_numbers": [
           335
         ],
-        "rarity": "Common",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -80652,7 +80906,7 @@
         "dex_numbers": [
           916
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Uncommon",
         "card_count": 3,
         "cards": [
           {
@@ -80803,7 +81057,7 @@
         "dex_numbers": [
           967
         ],
-        "rarity": "Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -80874,6 +81128,16 @@
     "total_cards": 279,
     "logo": "https://images.pokemontcg.io/sv2/logo.png",
     "symbol": "https://images.pokemontcg.io/sv2/symbol.png",
+    "rarity_totals": {
+      "Common": 81,
+      "Double Rare": 17,
+      "Hyper Rare": 7,
+      "Illustration Rare": 36,
+      "Rare": 25,
+      "Special Illustration Rare": 15,
+      "Ultra Rare": 26,
+      "Uncommon": 70
+    },
     "pokemon": [
       {
         "name": "hoppip",
@@ -80985,7 +81249,7 @@
         "dex_numbers": [
           205
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -81030,7 +81294,7 @@
         "dex_numbers": [
           214
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -81272,7 +81536,7 @@
         "dex_numbers": [
           907
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -81313,7 +81577,7 @@
         "dex_numbers": [
           908
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -81645,7 +81909,7 @@
         "dex_numbers": [
           1001
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -81775,7 +82039,7 @@
         "dex_numbers": [
           662
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -81868,7 +82132,7 @@
         "dex_numbers": [
           668
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -81991,7 +82255,7 @@
         "dex_numbers": [
           910
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -82032,7 +82296,7 @@
         "dex_numbers": [
           911
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -82148,7 +82412,7 @@
         "dex_numbers": [
           1004
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -82393,7 +82657,7 @@
         "dex_numbers": [
           875
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -82490,7 +82754,7 @@
         "dex_numbers": [
           913
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -82531,7 +82795,7 @@
         "dex_numbers": [
           914
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -82755,7 +83019,7 @@
         "dex_numbers": [
           997
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -82837,7 +83101,7 @@
         "dex_numbers": [
           1002
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -82912,7 +83176,7 @@
         "dex_numbers": [
           25
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -82954,7 +83218,7 @@
         "dex_numbers": [
           26
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -83166,7 +83430,7 @@
         "dex_numbers": [
           871
         ],
-        "rarity": "Common",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -83233,7 +83497,7 @@
         "dex_numbers": [
           922
         ],
-        "rarity": "Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -83315,7 +83579,7 @@
         "dex_numbers": [
           939
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -83503,7 +83767,7 @@
         "dex_numbers": [
           199
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -83574,7 +83838,7 @@
         "dex_numbers": [
           429
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -83667,7 +83931,7 @@
         "dex_numbers": [
           575
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -83734,7 +83998,7 @@
         "dex_numbers": [
           702
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -84092,7 +84356,7 @@
         "dex_numbers": [
           959
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Special Illustration Rare",
         "card_count": 3,
         "cards": [
           {
@@ -84202,7 +84466,7 @@
         "dex_numbers": [
           185
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -84425,7 +84689,7 @@
         "dex_numbers": [
           745
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -84695,7 +84959,7 @@
         "dex_numbers": [
           1003
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -84826,7 +85090,7 @@
         "dex_numbers": [
           980
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -85252,7 +85516,7 @@
         "dex_numbers": [
           945
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -85371,7 +85635,7 @@
         "dex_numbers": [
           879
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -85481,7 +85745,7 @@
         "dex_numbers": [
           715
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -85550,7 +85814,7 @@
         "dex_numbers": [
           981
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -85617,7 +85881,7 @@
         "dex_numbers": [
           982
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -85922,7 +86186,7 @@
         "dex_numbers": [
           925
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -85963,7 +86227,7 @@
         "dex_numbers": [
           931
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -86022,7 +86286,7 @@
         "dex_numbers": [
           973
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -86094,6 +86358,16 @@
     "total_cards": 230,
     "logo": "https://images.pokemontcg.io/sv3/logo.png",
     "symbol": "https://images.pokemontcg.io/sv3/symbol.png",
+    "rarity_totals": {
+      "Common": 92,
+      "Double Rare": 21,
+      "Hyper Rare": 2,
+      "Illustration Rare": 12,
+      "Rare": 10,
+      "Special Illustration Rare": 6,
+      "Ultra Rare": 12,
+      "Uncommon": 74
+    },
     "pokemon": [
       {
         "name": "oddish",
@@ -86850,7 +87124,7 @@
         "dex_numbers": [
           38
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -87204,7 +87478,7 @@
         "dex_numbers": [
           875
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -87868,7 +88142,7 @@
         "dex_numbers": [
           248
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -88485,7 +88759,7 @@
         "dex_numbers": [
           303
         ],
-        "rarity": "Common",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -88682,7 +88956,7 @@
         "dex_numbers": [
           416
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -88820,7 +89094,7 @@
         "dex_numbers": [
           972
         ],
-        "rarity": "Double Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -89361,7 +89635,7 @@
         "dex_numbers": [
           970
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -89431,7 +89705,7 @@
         "dex_numbers": [
           6
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -89674,7 +89948,7 @@
         "dex_numbers": [
           229
         ],
-        "rarity": "Double Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -89716,7 +89990,7 @@
         "dex_numbers": [
           359
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -90273,7 +90547,7 @@
         "dex_numbers": [
           966
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -90505,7 +90779,7 @@
         "dex_numbers": [
           17
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -90546,7 +90820,7 @@
         "dex_numbers": [
           18
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -91139,6 +91413,16 @@
     "total_cards": 207,
     "logo": "https://images.pokemontcg.io/sv3pt5/logo.png",
     "symbol": "https://images.pokemontcg.io/sv3pt5/symbol.png",
+    "rarity_totals": {
+      "Common": 66,
+      "Double Rare": 12,
+      "Hyper Rare": 2,
+      "Illustration Rare": 16,
+      "Rare": 25,
+      "Special Illustration Rare": 7,
+      "Ultra Rare": 16,
+      "Uncommon": 62
+    },
     "pokemon": [
       {
         "name": "bulbasaur",
@@ -91187,7 +91471,7 @@
         "dex_numbers": [
           2
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -91228,7 +91512,7 @@
         "dex_numbers": [
           3
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -91328,7 +91612,7 @@
         "dex_numbers": [
           5
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -91369,7 +91653,7 @@
         "dex_numbers": [
           6
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -91469,7 +91753,7 @@
         "dex_numbers": [
           8
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -91510,7 +91794,7 @@
         "dex_numbers": [
           9
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -91948,7 +92232,7 @@
         "dex_numbers": [
           24
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -92359,7 +92643,7 @@
         "dex_numbers": [
           38
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -92428,7 +92712,7 @@
         "dex_numbers": [
           40
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -93125,7 +93409,7 @@
         "dex_numbers": [
           65
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -93210,7 +93494,7 @@
         "dex_numbers": [
           67
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -93459,7 +93743,7 @@
         "dex_numbers": [
           76
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -94505,7 +94789,7 @@
         "dex_numbers": [
           115
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -94771,7 +95055,7 @@
         "dex_numbers": [
           124
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -95152,7 +95436,7 @@
         "dex_numbers": [
           138
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -95349,7 +95633,7 @@
         "dex_numbers": [
           145
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -95460,7 +95744,7 @@
         "dex_numbers": [
           148
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -95553,7 +95837,7 @@
         "dex_numbers": [
           151
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -95616,6 +95900,16 @@
     "total_cards": 266,
     "logo": "https://images.pokemontcg.io/sv4/logo.png",
     "symbol": "https://images.pokemontcg.io/sv4/symbol.png",
+    "rarity_totals": {
+      "Common": 81,
+      "Double Rare": 20,
+      "Hyper Rare": 7,
+      "Illustration Rare": 34,
+      "Rare": 27,
+      "Special Illustration Rare": 15,
+      "Ultra Rare": 28,
+      "Uncommon": 54
+    },
     "pokemon": [
       {
         "name": "surskit",
@@ -95675,7 +95969,7 @@
         "dex_numbers": [
           478
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -96066,7 +96360,7 @@
         "dex_numbers": [
           949
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -96345,7 +96639,7 @@
         "dex_numbers": [
           936
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -96680,7 +96974,7 @@
         "dex_numbers": [
           445
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -96971,7 +97265,7 @@
         "dex_numbers": [
           763
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -97072,7 +97366,7 @@
         "dex_numbers": [
           768
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -97213,7 +97507,7 @@
         "dex_numbers": [
           976
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -97655,7 +97949,7 @@
         "dex_numbers": [
           785
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -97740,7 +98034,7 @@
         "dex_numbers": [
           992
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -97932,7 +98226,7 @@
         "dex_numbers": [
           563
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -98285,7 +98579,7 @@
         "dex_numbers": [
           1006
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -98561,7 +98855,7 @@
         "dex_numbers": [
           620
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -98602,7 +98896,7 @@
         "dex_numbers": [
           720
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -98647,7 +98941,7 @@
         "dex_numbers": [
           774
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -98688,7 +98982,7 @@
         "dex_numbers": [
           849
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -98893,7 +99187,7 @@
         "dex_numbers": [
           988
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -98936,7 +99230,7 @@
         "dex_numbers": [
           989
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -99206,7 +99500,7 @@
         "dex_numbers": [
           569
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -99450,7 +99744,7 @@
         "dex_numbers": [
           1005
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -99622,7 +99916,7 @@
         "dex_numbers": [
           598
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -99771,7 +100065,7 @@
         "dex_numbers": [
           681
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -99924,7 +100218,7 @@
         "dex_numbers": [
           1000
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -99983,7 +100277,7 @@
         "dex_numbers": [
           334
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -100455,7 +100749,7 @@
         "dex_numbers": [
           925
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -100498,7 +100792,7 @@
         "dex_numbers": [
           962
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -100541,7 +100835,7 @@
         "dex_numbers": [
           967
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -100629,6 +100923,18 @@
     "total_cards": 245,
     "logo": "https://images.pokemontcg.io/sv4pt5/logo.png",
     "symbol": "https://images.pokemontcg.io/sv4pt5/symbol.png",
+    "rarity_totals": {
+      "Common": 40,
+      "Double Rare": 10,
+      "Hyper Rare": 6,
+      "Illustration Rare": 3,
+      "Rare": 16,
+      "Shiny Rare": 120,
+      "Shiny Ultra Rare": 12,
+      "Special Illustration Rare": 8,
+      "Ultra Rare": 5,
+      "Uncommon": 25
+    },
     "pokemon": [
       {
         "name": "pineco",
@@ -100636,7 +100942,7 @@
         "dex_numbers": [
           204
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -100677,7 +100983,7 @@
         "dex_numbers": [
           205
         ],
-        "rarity": "Shiny Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -100748,7 +101054,7 @@
         "dex_numbers": [
           948
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -100789,7 +101095,7 @@
         "dex_numbers": [
           949
         ],
-        "rarity": "Shiny Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -100832,7 +101138,7 @@
         "dex_numbers": [
           956
         ],
-        "rarity": "Shiny Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -100877,7 +101183,7 @@
         "dex_numbers": [
           4
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -100918,7 +101224,7 @@
         "dex_numbers": [
           5
         ],
-        "rarity": "Shiny Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -101089,7 +101395,7 @@
         "dex_numbers": [
           935
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -101197,7 +101503,7 @@
         "dex_numbers": [
           996
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -101238,7 +101544,7 @@
         "dex_numbers": [
           25
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -101372,7 +101678,7 @@
         "dex_numbers": [
           941
         ],
-        "rarity": "Shiny Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -101465,7 +101771,7 @@
         "dex_numbers": [
           177
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -101547,7 +101853,7 @@
         "dex_numbers": [
           280
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -101588,7 +101894,7 @@
         "dex_numbers": [
           281
         ],
-        "rarity": "Shiny Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -101629,7 +101935,7 @@
         "dex_numbers": [
           282
         ],
-        "rarity": "Shiny Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -101714,7 +102020,7 @@
         "dex_numbers": [
           439
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -101952,7 +102258,7 @@
         "dex_numbers": [
           927
         ],
-        "rarity": "Shiny Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -102034,7 +102340,7 @@
         "dex_numbers": [
           955
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -102168,7 +102474,7 @@
         "dex_numbers": [
           56
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -102209,7 +102515,7 @@
         "dex_numbers": [
           57
         ],
-        "rarity": "Shiny Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -102449,7 +102755,7 @@
         "dex_numbers": [
           6
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -102572,7 +102878,7 @@
         "dex_numbers": [
           194
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -102613,7 +102919,7 @@
         "dex_numbers": [
           980
         ],
-        "rarity": "Shiny Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -102775,7 +103081,7 @@
         "dex_numbers": [
           965
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -102911,7 +103217,7 @@
         "dex_numbers": [
           714
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -102952,7 +103258,7 @@
         "dex_numbers": [
           715
         ],
-        "rarity": "Shiny Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -103036,7 +103342,7 @@
         "dex_numbers": [
           915
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -103077,7 +103383,7 @@
         "dex_numbers": [
           916
         ],
-        "rarity": "Shiny Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -103118,7 +103424,7 @@
         "dex_numbers": [
           924
         ],
-        "rarity": "Common",
+        "rarity": "Shiny Rare",
         "card_count": 2,
         "cards": [
           {
@@ -103159,7 +103465,7 @@
         "dex_numbers": [
           925
         ],
-        "rarity": "Shiny Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -103200,7 +103506,7 @@
         "dex_numbers": [
           931
         ],
-        "rarity": "Shiny Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -105571,7 +105877,7 @@
         "dex_numbers": [
           151
         ],
-        "rarity": "Shiny Ultra Rare",
+        "rarity": "Special Illustration Rare",
         "card_count": 2,
         "cards": [
           {
@@ -105834,6 +106140,17 @@
     "total_cards": 218,
     "logo": "https://images.pokemontcg.io/sv5/logo.png",
     "symbol": "https://images.pokemontcg.io/sv5/symbol.png",
+    "rarity_totals": {
+      "ACE SPEC Rare": 7,
+      "Common": 71,
+      "Double Rare": 15,
+      "Hyper Rare": 6,
+      "Illustration Rare": 22,
+      "Rare": 14,
+      "Special Illustration Rare": 10,
+      "Ultra Rare": 18,
+      "Uncommon": 55
+    },
     "pokemon": [
       {
         "name": "scyther",
@@ -105945,7 +106262,7 @@
         "dex_numbers": [
           275
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -106157,7 +106474,7 @@
         "dex_numbers": [
           389
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -106319,7 +106636,7 @@
         "dex_numbers": [
           586
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -106543,7 +106860,7 @@
         "dex_numbers": [
           1010
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -106845,7 +107162,7 @@
         "dex_numbers": [
           727
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -106966,7 +107283,7 @@
         "dex_numbers": [
           1020
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -107346,7 +107663,7 @@
         "dex_numbers": [
           1009
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -107674,7 +107991,7 @@
         "dex_numbers": [
           961
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -108022,7 +108339,7 @@
         "dex_numbers": [
           579
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -108236,7 +108553,7 @@
         "dex_numbers": [
           1006
         ],
-        "rarity": "Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -108279,7 +108596,7 @@
         "dex_numbers": [
           1023
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -108477,7 +108794,7 @@
         "dex_numbers": [
           530
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -108648,7 +108965,7 @@
         "dex_numbers": [
           750
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -108837,7 +109154,7 @@
         "dex_numbers": [
           1022
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -109050,7 +109367,7 @@
         "dex_numbers": [
           94
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -109171,7 +109488,7 @@
         "dex_numbers": [
           981
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -109269,7 +109586,7 @@
         "dex_numbers": [
           212
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -109390,7 +109707,7 @@
         "dex_numbers": [
           376
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -109613,7 +109930,7 @@
         "dex_numbers": [
           1021
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -110075,7 +110392,7 @@
         "dex_numbers": [
           573
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -110188,6 +110505,17 @@
     "total_cards": 226,
     "logo": "https://images.pokemontcg.io/sv6/logo.png",
     "symbol": "https://images.pokemontcg.io/sv6/symbol.png",
+    "rarity_totals": {
+      "ACE SPEC Rare": 6,
+      "Common": 76,
+      "Double Rare": 14,
+      "Hyper Rare": 6,
+      "Illustration Rare": 21,
+      "Rare": 16,
+      "Special Illustration Rare": 11,
+      "Ultra Rare": 21,
+      "Uncommon": 55
+    },
     "pokemon": [
       {
         "name": "tangela",
@@ -110366,7 +110694,7 @@
         "dex_numbers": [
           192
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -110836,7 +111164,7 @@
         "dex_numbers": [
           1013
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -110910,7 +111238,7 @@
         "dex_numbers": [
           1017
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 14,
         "cards": [
           {
@@ -111235,7 +111563,7 @@
         "dex_numbers": [
           219
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -112042,7 +112370,7 @@
         "dex_numbers": [
           845
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -112109,7 +112437,7 @@
         "dex_numbers": [
           964
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Uncommon",
         "card_count": 3,
         "cards": [
           {
@@ -112299,7 +112627,7 @@
         "dex_numbers": [
           405
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -112580,7 +112908,7 @@
         "dex_numbers": [
           995
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -113071,7 +113399,7 @@
         "dex_numbers": [
           985
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -113313,7 +113641,7 @@
         "dex_numbers": [
           476
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -113447,7 +113775,7 @@
         "dex_numbers": [
           658
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -114045,7 +114373,7 @@
         "dex_numbers": [
           887
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -114090,7 +114418,7 @@
         "dex_numbers": [
           978
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -114198,7 +114526,7 @@
         "dex_numbers": [
           242
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -114412,7 +114740,7 @@
         "dex_numbers": [
           901
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -114491,6 +114819,17 @@
     "total_cards": 99,
     "logo": "https://images.pokemontcg.io/sv6pt5/logo.png",
     "symbol": "https://images.pokemontcg.io/sv6pt5/symbol.png",
+    "rarity_totals": {
+      "ACE SPEC Rare": 3,
+      "Common": 28,
+      "Double Rare": 6,
+      "Hyper Rare": 3,
+      "Illustration Rare": 15,
+      "Rare": 7,
+      "Special Illustration Rare": 5,
+      "Ultra Rare": 10,
+      "Uncommon": 20
+    },
     "pokemon": [
       {
         "name": "joltik",
@@ -114830,7 +115169,7 @@
         "dex_numbers": [
           230
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -114925,7 +115264,7 @@
         "dex_numbers": [
           966
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -115566,7 +115905,7 @@
         "dex_numbers": [
           1014
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -115640,7 +115979,7 @@
         "dex_numbers": [
           1015
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -115714,7 +116053,7 @@
         "dex_numbers": [
           1016
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -115788,7 +116127,7 @@
         "dex_numbers": [
           1025
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -116291,6 +116630,17 @@
     "total_cards": 175,
     "logo": "https://images.pokemontcg.io/sv7/logo.png",
     "symbol": "https://images.pokemontcg.io/sv7/symbol.png",
+    "rarity_totals": {
+      "ACE SPEC Rare": 3,
+      "Common": 71,
+      "Double Rare": 14,
+      "Hyper Rare": 3,
+      "Illustration Rare": 13,
+      "Rare": 15,
+      "Special Illustration Rare": 6,
+      "Ultra Rare": 11,
+      "Uncommon": 39
+    },
     "pokemon": [
       {
         "name": "venusaur",
@@ -116682,7 +117032,7 @@
         "dex_numbers": [
           1019
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -117109,7 +117459,7 @@
         "dex_numbers": [
           815
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -117207,7 +117557,7 @@
         "dex_numbers": [
           131
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Uncommon",
         "card_count": 3,
         "cards": [
           {
@@ -117502,7 +117852,7 @@
         "dex_numbers": [
           740
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -117766,7 +118116,7 @@
         "dex_numbers": [
           596
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -118248,7 +118598,7 @@
         "dex_numbers": [
           927
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -118598,7 +118948,7 @@
         "dex_numbers": [
           308
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -119421,7 +119771,7 @@
         "dex_numbers": [
           968
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -119881,7 +120231,7 @@
         "dex_numbers": [
           1024
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -119999,6 +120349,17 @@
     "total_cards": 252,
     "logo": "https://images.pokemontcg.io/sv8/logo.png",
     "symbol": "https://images.pokemontcg.io/sv8/symbol.png",
+    "rarity_totals": {
+      "ACE SPEC Rare": 8,
+      "Common": 88,
+      "Double Rare": 18,
+      "Hyper Rare": 6,
+      "Illustration Rare": 23,
+      "Rare": 16,
+      "Special Illustration Rare": 11,
+      "Ultra Rare": 21,
+      "Uncommon": 61
+    },
     "pokemon": [
       {
         "name": "exeggcute",
@@ -120156,7 +120517,7 @@
         "dex_numbers": [
           632
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -120267,7 +120628,7 @@
         "dex_numbers": [
           666
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -120334,7 +120695,7 @@
         "dex_numbers": [
           756
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -121089,7 +121450,7 @@
         "dex_numbers": [
           937
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 3,
         "cards": [
           {
@@ -121147,7 +121508,7 @@
         "dex_numbers": [
           952
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -121284,7 +121645,7 @@
         "dex_numbers": [
           350
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -121488,7 +121849,7 @@
         "dex_numbers": [
           646
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -121531,7 +121892,7 @@
         "dex_numbers": [
           779
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -121770,7 +122131,7 @@
         "dex_numbers": [
           25
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -122098,7 +122459,7 @@
         "dex_numbers": [
           941
         ],
-        "rarity": "Double Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -122323,7 +122684,7 @@
         "dex_numbers": [
           380
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -122382,7 +122743,7 @@
         "dex_numbers": [
           381
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -122752,7 +123113,7 @@
         "dex_numbers": [
           770
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -123166,7 +123527,7 @@
         "dex_numbers": [
           330
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -123539,7 +123900,7 @@
         "dex_numbers": [
           635
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -123679,7 +124040,7 @@
         "dex_numbers": [
           51
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -123891,7 +124252,7 @@
         "dex_numbers": [
           1018
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -124133,7 +124494,7 @@
         "dex_numbers": [
           841
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -124174,7 +124535,7 @@
         "dex_numbers": [
           842
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -124241,7 +124602,7 @@
         "dex_numbers": [
           978
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -124405,7 +124766,7 @@
         "dex_numbers": [
           289
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -124593,7 +124954,7 @@
         "dex_numbers": [
           628
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -124764,7 +125125,7 @@
         "dex_numbers": [
           967
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -124866,6 +125227,16 @@
     "total_cards": 180,
     "logo": "https://images.pokemontcg.io/sv8pt5/logo.png",
     "symbol": "https://images.pokemontcg.io/sv8pt5/symbol.png",
+    "rarity_totals": {
+      "ACE SPEC Rare": 6,
+      "Common": 46,
+      "Double Rare": 25,
+      "Hyper Rare": 5,
+      "Rare": 21,
+      "Special Illustration Rare": 32,
+      "Ultra Rare": 12,
+      "Uncommon": 33
+    },
     "pokemon": [
       {
         "name": "exeggcute",
@@ -124977,7 +125348,7 @@
         "dex_numbers": [
           470
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -125168,7 +125539,7 @@
         "dex_numbers": [
           1017
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 9,
         "cards": [
           {
@@ -125332,7 +125703,7 @@
         "dex_numbers": [
           136
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -125548,7 +125919,7 @@
         "dex_numbers": [
           134
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -125634,7 +126005,7 @@
         "dex_numbers": [
           471
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -125739,7 +126110,7 @@
         "dex_numbers": [
           135
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -125797,7 +126168,7 @@
         "name": "iron hands",
         "dex_number": null,
         "dex_numbers": [],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -125862,7 +126233,7 @@
         "dex_numbers": [
           196
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -126052,7 +126423,7 @@
         "dex_numbers": [
           700
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -126479,7 +126850,7 @@
         "name": "sandy shocks",
         "dex_number": null,
         "dex_numbers": [],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -126542,7 +126913,7 @@
         "dex_numbers": [
           197
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -126927,7 +127298,7 @@
         "dex_numbers": [
           887
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -126972,7 +127343,7 @@
         "dex_numbers": [
           133
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -127451,7 +127822,7 @@
         "dex_numbers": [
           1024
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -127745,6 +128116,16 @@
     "total_cards": 190,
     "logo": "https://images.pokemontcg.io/sv9/logo.png",
     "symbol": "https://images.pokemontcg.io/sv9/symbol.png",
+    "rarity_totals": {
+      "Common": 85,
+      "Double Rare": 16,
+      "Hyper Rare": 3,
+      "Illustration Rare": 11,
+      "Rare": 16,
+      "Special Illustration Rare": 6,
+      "Ultra Rare": 11,
+      "Uncommon": 42
+    },
     "pokemon": [
       {
         "name": "caterpie",
@@ -127934,7 +128315,7 @@
         "dex_numbers": [
           556
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -128523,7 +128904,7 @@
         "dex_numbers": [
           643
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -128580,7 +128961,7 @@
         "dex_numbers": [
           721
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -128639,7 +129020,7 @@
         "dex_numbers": [
           144
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -129217,7 +129598,7 @@
         "dex_numbers": [
           939
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -129359,7 +129740,7 @@
         "dex_numbers": [
           35
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -130022,7 +130403,7 @@
         "dex_numbers": [
           473
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -130549,7 +130930,7 @@
         "dex_numbers": [
           571
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -130936,7 +131317,7 @@
         "dex_numbers": [
           888
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -131047,7 +131428,7 @@
         "dex_numbers": [
           373
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -131251,7 +131632,7 @@
         "dex_numbers": [
           982
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -131714,7 +132095,7 @@
         "dex_numbers": [
           845
         ],
-        "rarity": "Common",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -131837,6 +132218,16 @@
     "total_cards": 244,
     "logo": "https://images.pokemontcg.io/sv10/logo.png",
     "symbol": "https://images.pokemontcg.io/sv10/symbol.png",
+    "rarity_totals": {
+      "Common": 85,
+      "Double Rare": 17,
+      "Hyper Rare": 6,
+      "Illustration Rare": 23,
+      "Rare": 18,
+      "Special Illustration Rare": 11,
+      "Ultra Rare": 22,
+      "Uncommon": 62
+    },
     "pokemon": [
       {
         "name": "ethan's pinsir",
@@ -131911,7 +132302,7 @@
         "dex_numbers": [
           469
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -132201,7 +132592,7 @@
         "dex_numbers": [
           492
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -132599,7 +132990,7 @@
         "dex_numbers": [
           930
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -132844,7 +133235,7 @@
         "dex_numbers": [
           78
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -132885,7 +133276,7 @@
         "dex_numbers": [
           146
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -133115,7 +133506,7 @@
         "dex_numbers": [
           229
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -133156,7 +133547,7 @@
         "dex_numbers": [
           250
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -133324,7 +133715,7 @@
         "dex_numbers": [
           54
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -133863,7 +134254,7 @@
         "dex_numbers": [
           975
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -133906,7 +134297,7 @@
         "dex_numbers": [
           977
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -133975,7 +134366,7 @@
         "dex_numbers": [
           466
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -134293,7 +134684,7 @@
         "dex_numbers": [
           150
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -134550,7 +134941,7 @@
         "dex_numbers": [
           826
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -134877,7 +135268,7 @@
         "dex_numbers": [
           377
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -134972,7 +135363,7 @@
         "dex_numbers": [
           445
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -135385,7 +135776,7 @@
         "dex_numbers": [
           34
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -135496,7 +135887,7 @@
         "dex_numbers": [
           169
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -135649,7 +136040,7 @@
         "dex_numbers": [
           110
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -135690,7 +136081,7 @@
         "dex_numbers": [
           198
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -136018,7 +136409,7 @@
         "dex_numbers": [
           943
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -136372,7 +136763,7 @@
         "dex_numbers": [
           53
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -136709,6 +137100,16 @@
     "total_cards": 172,
     "logo": "https://images.pokemontcg.io/zsv10pt5/logo.png",
     "symbol": "https://images.pokemontcg.io/zsv10pt5/symbol.png",
+    "rarity_totals": {
+      "Black White Rare": 1,
+      "Common": 39,
+      "Double Rare": 6,
+      "Illustration Rare": 69,
+      "Rare": 11,
+      "Special Illustration Rare": 7,
+      "Ultra Rare": 8,
+      "Uncommon": 31
+    },
     "pokemon": [
       {
         "name": "snivy",
@@ -136798,7 +137199,7 @@
         "dex_numbers": [
           497
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -136898,7 +137299,7 @@
         "dex_numbers": [
           512
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -136980,7 +137381,7 @@
         "dex_numbers": [
           549
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -137144,7 +137545,7 @@
         "dex_numbers": [
           591
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -137267,7 +137668,7 @@
         "dex_numbers": [
           555
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -137431,7 +137832,7 @@
         "dex_numbers": [
           516
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -137554,7 +137955,7 @@
         "dex_numbers": [
           537
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -137595,7 +137996,7 @@
         "dex_numbers": [
           564
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -137677,7 +138078,7 @@
         "dex_numbers": [
           594
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -137800,7 +138201,7 @@
         "dex_numbers": [
           615
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -137841,7 +138242,7 @@
         "dex_numbers": [
           646
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -137982,7 +138383,7 @@
         "dex_numbers": [
           603
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -138023,7 +138424,7 @@
         "dex_numbers": [
           604
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -138090,7 +138491,7 @@
         "dex_numbers": [
           644
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -138206,7 +138607,7 @@
         "dex_numbers": [
           518
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -138396,7 +138797,7 @@
         "dex_numbers": [
           606
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -138478,7 +138879,7 @@
         "dex_numbers": [
           623
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -138519,7 +138920,7 @@
         "dex_numbers": [
           648
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -138619,7 +139020,7 @@
         "dex_numbers": [
           530
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -138801,7 +139202,7 @@
         "dex_numbers": [
           538
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -138883,7 +139284,7 @@
         "dex_numbers": [
           558
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -139047,7 +139448,7 @@
         "dex_numbers": [
           545
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -139170,7 +139571,7 @@
         "dex_numbers": [
           553
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -139211,7 +139612,7 @@
         "dex_numbers": [
           589
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -139405,7 +139806,7 @@
         "dex_numbers": [
           625
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -139487,7 +139888,7 @@
         "dex_numbers": [
           649
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -139751,7 +140152,7 @@
         "dex_numbers": [
           521
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -139874,7 +140275,7 @@
         "dex_numbers": [
           573
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -139956,7 +140357,7 @@
         "dex_numbers": [
           628
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -140001,6 +140402,16 @@
     "total_cards": 173,
     "logo": "https://images.pokemontcg.io/rsv10pt5/logo.png",
     "symbol": "https://images.pokemontcg.io/rsv10pt5/symbol.png",
+    "rarity_totals": {
+      "Black White Rare": 1,
+      "Common": 38,
+      "Double Rare": 6,
+      "Illustration Rare": 69,
+      "Rare": 11,
+      "Special Illustration Rare": 7,
+      "Ultra Rare": 8,
+      "Uncommon": 33
+    },
     "pokemon": [
       {
         "name": "sewaddle",
@@ -140090,7 +140501,7 @@
         "dex_numbers": [
           542
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -140172,7 +140583,7 @@
         "dex_numbers": [
           547
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -140272,7 +140683,7 @@
         "dex_numbers": [
           586
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -140354,7 +140765,7 @@
         "dex_numbers": [
           617
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -140600,7 +141011,7 @@
         "dex_numbers": [
           514
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -140764,7 +141175,7 @@
         "dex_numbers": [
           631
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -140805,7 +141216,7 @@
         "dex_numbers": [
           643
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -141085,7 +141496,7 @@
         "dex_numbers": [
           581
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -141208,7 +141619,7 @@
         "dex_numbers": [
           584
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -141249,7 +141660,7 @@
         "dex_numbers": [
           647
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -141349,7 +141760,7 @@
         "dex_numbers": [
           523
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -141431,7 +141842,7 @@
         "dex_numbers": [
           596
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -141472,7 +141883,7 @@
         "dex_numbers": [
           618
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -141554,7 +141965,7 @@
         "dex_numbers": [
           528
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -141595,7 +142006,7 @@
         "dex_numbers": [
           561
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -141867,7 +142278,7 @@
         "dex_numbers": [
           593
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -142008,7 +142419,7 @@
         "dex_numbers": [
           526
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -142049,7 +142460,7 @@
         "dex_numbers": [
           539
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -142213,7 +142624,7 @@
         "dex_numbers": [
           620
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -142336,7 +142747,7 @@
         "dex_numbers": [
           510
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -142418,7 +142829,7 @@
         "dex_numbers": [
           560
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -142500,7 +142911,7 @@
         "dex_numbers": [
           569
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -142664,7 +143075,7 @@
         "dex_numbers": [
           630
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -142787,7 +143198,7 @@
         "dex_numbers": [
           635
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -142887,7 +143298,7 @@
         "dex_numbers": [
           598
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -142928,7 +143339,7 @@
         "dex_numbers": [
           632
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -142969,7 +143380,7 @@
         "dex_numbers": [
           621
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -143051,7 +143462,7 @@
         "dex_numbers": [
           505
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -143174,7 +143585,7 @@
         "dex_numbers": [
           508
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -143215,7 +143626,7 @@
         "dex_numbers": [
           626
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -143330,6 +143741,16 @@
     "total_cards": 188,
     "logo": "https://images.pokemontcg.io/me1/logo.png",
     "symbol": "https://images.pokemontcg.io/me1/symbol.png",
+    "rarity_totals": {
+      "Common": 67,
+      "Double Rare": 10,
+      "Illustration Rare": 22,
+      "Mega Hyper Rare": 2,
+      "Rare": 12,
+      "Special Illustration Rare": 10,
+      "Ultra Rare": 22,
+      "Uncommon": 43
+    },
     "pokemon": [
       {
         "name": "bulbasaur",
@@ -143419,7 +143840,7 @@
         "dex_numbers": [
           3
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -143507,7 +143928,7 @@
         "dex_numbers": [
           103
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -143678,7 +144099,7 @@
         "dex_numbers": [
           213
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -143849,7 +144270,7 @@
         "dex_numbers": [
           291
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -144009,7 +144430,7 @@
         "dex_numbers": [
           323
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -144422,7 +144843,7 @@
         "dex_numbers": [
           460
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -144586,7 +145007,7 @@
         "dex_numbers": [
           818
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -144835,7 +145256,7 @@
         "dex_numbers": [
           310
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -145129,7 +145550,7 @@
         "dex_numbers": [
           282
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -145208,7 +145629,7 @@
         "dex_numbers": [
           292
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -145353,7 +145774,7 @@
         "dex_numbers": [
           972
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -145654,7 +146075,7 @@
         "dex_numbers": [
           448
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -145785,7 +146206,7 @@
         "dex_numbers": [
           802
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -145904,7 +146325,7 @@
         "dex_numbers": [
           934
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -145971,7 +146392,7 @@
         "dex_numbers": [
           359
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -146033,7 +146454,7 @@
         "dex_numbers": [
           442
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -146260,7 +146681,7 @@
         "dex_numbers": [
           303
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -146435,7 +146856,7 @@
         "dex_numbers": [
           380
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -146590,7 +147011,7 @@
         "dex_numbers": [
           115
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -146797,7 +147218,7 @@
         "dex_numbers": [
           735
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -146909,6 +147330,16 @@
     "total_cards": 130,
     "logo": "https://images.pokemontcg.io/me2/logo.png",
     "symbol": "https://images.pokemontcg.io/me2/symbol.png",
+    "rarity_totals": {
+      "Common": 43,
+      "Double Rare": 10,
+      "Illustration Rare": 13,
+      "Mega Hyper Rare": 1,
+      "Rare": 10,
+      "Special Illustration Rare": 5,
+      "Ultra Rare": 17,
+      "Uncommon": 31
+    },
     "pokemon": [
       {
         "name": "oddish",
@@ -146994,7 +147425,7 @@
         "dex_numbers": [
           214
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -147091,7 +147522,7 @@
         "dex_numbers": [
           272
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -147277,7 +147708,7 @@
         "dex_numbers": [
           6
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -147460,7 +147891,7 @@
         "dex_numbers": [
           741
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -147793,7 +148224,7 @@
         "dex_numbers": [
           479
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -148023,7 +148454,7 @@
         "dex_numbers": [
           429
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -148724,7 +149155,7 @@
         "dex_numbers": [
           319
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -149009,7 +149440,7 @@
         "dex_numbers": [
           395
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -149223,7 +149654,7 @@
         "dex_numbers": [
           40
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -149435,7 +149866,7 @@
         "dex_numbers": [
           428
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -149553,6 +149984,17 @@
     "total_cards": 295,
     "logo": "https://images.scrydex.com/pokemon/me2pt5-logo/logo",
     "symbol": "https://images.scrydex.com/pokemon/me2pt5-symbol/symbol",
+    "rarity_totals": {
+      "Common": 84,
+      "Double Rare": 39,
+      "Illustration Rare": 33,
+      "MEGA_ATTACK_RARE": 7,
+      "Mega Hyper Rare": 2,
+      "Rare": 25,
+      "Special Illustration Rare": 22,
+      "Ultra Rare": 14,
+      "Uncommon": 69
+    },
     "pokemon": [
       {
         "name": "erika's oddish",
@@ -149810,7 +150252,7 @@
         "dex_numbers": [
           154
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -149907,7 +150349,7 @@
         "dex_numbers": [
           267
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -149974,7 +150416,7 @@
         "dex_numbers": [
           269
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -150470,7 +150912,7 @@
         "dex_numbers": [
           500
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -150593,7 +151035,7 @@
         "dex_numbers": [
           758
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -150848,7 +151290,7 @@
         "dex_numbers": [
           160
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -150919,7 +151361,7 @@
         "dex_numbers": [
           461
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -151001,7 +151443,7 @@
         "dex_numbers": [
           478
         ],
-        "rarity": "MEGA_ATTACK_RARE",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -151427,7 +151869,7 @@
         "dex_numbers": [
           604
         ],
-        "rarity": "MEGA_ATTACK_RARE",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -151489,7 +151931,7 @@
         "dex_numbers": [
           618
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -151573,7 +152015,7 @@
         "dex_numbers": [
           695
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -151640,7 +152082,7 @@
         "dex_numbers": [
           738
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -151760,7 +152202,7 @@
         "dex_numbers": [
           939
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -151887,7 +152329,7 @@
         "dex_numbers": [
           35
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -152023,7 +152465,7 @@
         "dex_numbers": [
           150
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -152159,7 +152601,7 @@
         "dex_numbers": [
           183
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -152389,7 +152831,7 @@
         "dex_numbers": [
           354
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -152512,7 +152954,7 @@
         "dex_numbers": [
           685
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -152620,7 +153062,7 @@
         "dex_numbers": [
           778
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -152739,7 +153181,7 @@
         "dex_numbers": [
           51
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -153152,7 +153594,7 @@
         "dex_numbers": [
           701
         ],
-        "rarity": "MEGA_ATTACK_RARE",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -153214,7 +153656,7 @@
         "dex_numbers": [
           703
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -153435,7 +153877,7 @@
         "dex_numbers": [
           94
         ],
-        "rarity": "MEGA_ATTACK_RARE",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -153575,7 +154017,7 @@
         "dex_numbers": [
           262
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -153668,7 +154110,7 @@
         "dex_numbers": [
           862
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -153709,7 +154151,7 @@
         "dex_numbers": [
           442
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -153776,7 +154218,7 @@
         "dex_numbers": [
           560
         ],
-        "rarity": "MEGA_ATTACK_RARE",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -153864,7 +154306,7 @@
         "dex_numbers": [
           571
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -154012,7 +154454,7 @@
         "dex_numbers": [
           1016
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -154081,7 +154523,7 @@
         "dex_numbers": [
           303
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -154306,7 +154748,7 @@
         "dex_numbers": [
           149
         ],
-        "rarity": "MEGA_ATTACK_RARE",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -154678,7 +155120,7 @@
         "dex_numbers": [
           206
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -154892,7 +155334,7 @@
         "dex_numbers": [
           531
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -155137,7 +155579,7 @@
         "dex_numbers": [
           719
         ],
-        "rarity": "MEGA_ATTACK_RARE",
+        "rarity": "Special Illustration Rare",
         "card_count": 2,
         "cards": [
           {
@@ -155240,6 +155682,16 @@
     "total_cards": 124,
     "logo": "https://images.scrydex.com/pokemon/me3-logo/logo",
     "symbol": "https://images.scrydex.com/pokemon/me3-symbol/symbol",
+    "rarity_totals": {
+      "Common": 44,
+      "Double Rare": 9,
+      "Illustration Rare": 11,
+      "Mega Hyper Rare": 1,
+      "Rare": 11,
+      "Special Illustration Rare": 6,
+      "Ultra Rare": 18,
+      "Uncommon": 24
+    },
     "pokemon": [
       {
         "name": "spinarak",
@@ -155563,7 +156015,7 @@
         "dex_numbers": [
           724
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -155632,7 +156084,7 @@
         "dex_numbers": [
           663
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -155699,7 +156151,7 @@
         "dex_numbers": [
           758
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -155846,7 +156298,7 @@
         "dex_numbers": [
           121
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -156188,7 +156640,7 @@
         "dex_numbers": [
           36
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -156670,7 +157122,7 @@
         "dex_numbers": [
           718
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -156853,7 +157305,7 @@
         "dex_numbers": [
           452
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -156894,7 +157346,7 @@
         "dex_numbers": [
           717
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -156963,7 +157415,7 @@
         "dex_numbers": [
           227
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -157153,7 +157605,7 @@
         "dex_numbers": [
           20
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -157194,7 +157646,7 @@
         "dex_numbers": [
           52
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -157387,6 +157839,16 @@
     "total_cards": 122,
     "logo": "https://images.scrydex.com/pokemon/me4-logo/logo",
     "symbol": "https://images.scrydex.com/pokemon/me4-symbol/symbol",
+    "rarity_totals": {
+      "Common": 38,
+      "Double Rare": 10,
+      "Illustration Rare": 11,
+      "Mega Hyper Rare": 1,
+      "Rare": 12,
+      "Special Illustration Rare": 6,
+      "Ultra Rare": 18,
+      "Uncommon": 26
+    },
     "pokemon": [
       {
         "name": "weedle",
@@ -157446,7 +157908,7 @@
         "dex_numbers": [
           15
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -157790,7 +158252,7 @@
         "dex_numbers": [
           668
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -158021,7 +158483,7 @@
         "dex_numbers": [
           658
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -158394,7 +158856,7 @@
         "dex_numbers": [
           670
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -158586,7 +159048,7 @@
         "dex_numbers": [
           711
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -158774,7 +159236,7 @@
         "dex_numbers": [
           344
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -159264,7 +159726,7 @@
         "dex_numbers": [
           638
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -159307,7 +159769,7 @@
         "dex_numbers": [
           691
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -159462,7 +159924,7 @@
         "dex_numbers": [
           128
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -159596,7 +160058,7 @@
         "dex_numbers": [
           573
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -159659,6 +160121,16 @@
     "total_cards": 120,
     "logo": "https://images.scrydex.com/pokemon/me5-logo/logo",
     "symbol": "https://images.scrydex.com/pokemon/me5-symbol/symbol",
+    "rarity_totals": {
+      "Common": 37,
+      "Double Rare": 10,
+      "Illustration Rare": 11,
+      "Mega Hyper Rare": 1,
+      "Rare": 11,
+      "Special Illustration Rare": 6,
+      "Ultra Rare": 18,
+      "Uncommon": 26
+    },
     "pokemon": [
       {
         "name": "tropius",
@@ -159759,7 +160231,7 @@
         "dex_numbers": [
           754
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -160120,7 +160592,7 @@
         "dex_numbers": [
           321
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -160360,7 +160832,7 @@
         "dex_numbers": [
           310
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -160453,7 +160925,7 @@
         "dex_numbers": [
           807
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -160567,7 +161039,7 @@
         "dex_numbers": [
           80
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 3,
         "cards": [
           {
@@ -160781,7 +161253,7 @@
         "dex_numbers": [
           609
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -160842,7 +161314,7 @@
         "dex_numbers": [
           781
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -161011,7 +161483,7 @@
         "dex_numbers": [
           409
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -161106,7 +161578,7 @@
         "dex_numbers": [
           491
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -161315,7 +161787,7 @@
         "dex_numbers": [
           828
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -161356,7 +161828,7 @@
         "dex_numbers": [
           877
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -161664,7 +162136,7 @@
         "dex_numbers": [
           530
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -161761,7 +162233,7 @@
         "dex_numbers": [
           733
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -161899,6 +162371,15 @@
     "total_cards": 161,
     "logo": "https://images.scrydex.com/pokemon/me55-logo/logo",
     "symbol": "https://images.scrydex.com/pokemon/me55-symbol/symbol",
+    "rarity_totals": {
+      "Common": 71,
+      "Double Rare": 12,
+      "Futuristic Rare": 2,
+      "Illustration Rare": 18,
+      "Pikachu Rare": 30,
+      "Rare": 18,
+      "Special Illustration Rare": 10
+    },
     "pokemon": [
       {
         "name": "exeggcute",
@@ -162300,7 +162781,7 @@
         "dex_numbers": [
           909
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -162503,7 +162984,7 @@
         "dex_numbers": [
           658
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -163339,7 +163820,7 @@
         "dex_numbers": [
           150
         ],
-        "rarity": "Futuristic Rare",
+        "rarity": "Double Rare",
         "card_count": 4,
         "cards": [
           {
@@ -163584,7 +164065,7 @@
         "dex_numbers": [
           196
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -163626,7 +164107,7 @@
         "dex_numbers": [
           700
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -164257,7 +164738,7 @@
         "dex_numbers": [
           94
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -164300,7 +164781,7 @@
         "dex_numbers": [
           197
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -164610,7 +165091,7 @@
         "dex_numbers": [
           385
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -164824,7 +165305,7 @@
         "dex_numbers": [
           373
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -165217,6 +165698,26 @@
     "total_cards": 30,
     "logo": "https://images.scrydex.com/pokemon/me55c-logo/logo",
     "symbol": "https://images.scrydex.com/pokemon/me55c-symbol/symbol",
+    "rarity_totals": {
+      "Amazing Rare": 1,
+      "Common": 2,
+      "Holo Rare V": 1,
+      "Holo Rare VMAX": 1,
+      "Holo Rare VSTAR": 1,
+      "Illustration Rare": 1,
+      "LEGEND": 2,
+      "Rare": 3,
+      "Rare BREAK": 1,
+      "Rare Holo": 4,
+      "Rare Holo EX": 3,
+      "Rare Holo GX": 3,
+      "Rare Holo LV.X": 1,
+      "Rare Holo ex": 1,
+      "Rare Prime": 1,
+      "Rare Secret": 2,
+      "Rare Ultra": 1,
+      "Uncommon": 1
+    },
     "pokemon": [
       {
         "name": "pikachu",
@@ -165224,7 +165725,7 @@
         "dex_numbers": [
           25
         ],
-        "rarity": "Common",
+        "rarity": "Rare Holo GX",
         "card_count": 2,
         "cards": [
           {
@@ -165920,6 +166421,16 @@
     "total_cards": 141,
     "logo": "https://images.scrydex.com/pokemon/me6-logo/logo",
     "symbol": "https://images.scrydex.com/pokemon/me6-symbol/symbol",
+    "rarity_totals": {
+      "Common": 50,
+      "Double Rare": 10,
+      "Illustration Rare": 14,
+      "Mega Hyper Rare": 1,
+      "Rare": 10,
+      "Special Illustration Rare": 6,
+      "Ultra Rare": 17,
+      "Uncommon": 33
+    },
     "pokemon": [
       {
         "name": "heracross",
@@ -166202,7 +166713,7 @@
         "dex_numbers": [
           768
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -166596,7 +167107,7 @@
         "dex_numbers": [
           479
         ],
-        "rarity": "Common",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -166784,7 +167295,7 @@
         "dex_numbers": [
           746
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -166853,7 +167364,7 @@
         "dex_numbers": [
           466
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -166920,7 +167431,7 @@
         "dex_numbers": [
           243
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -167306,7 +167817,7 @@
         "dex_numbers": [
           623
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -167368,7 +167879,7 @@
         "dex_numbers": [
           905
         ],
-        "rarity": "Illustration Rare",
+        "rarity": "Uncommon",
         "card_count": 2,
         "cards": [
           {
@@ -167975,7 +168486,7 @@
         "dex_numbers": [
           687
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
@@ -168444,7 +168955,7 @@
         "dex_numbers": [
           384
         ],
-        "rarity": "Special Illustration Rare",
+        "rarity": "Double Rare",
         "card_count": 3,
         "cards": [
           {
@@ -168584,7 +169095,7 @@
         "dex_numbers": [
           663
         ],
-        "rarity": "Ultra Rare",
+        "rarity": "Double Rare",
         "card_count": 2,
         "cards": [
           {
