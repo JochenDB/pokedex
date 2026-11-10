@@ -122,7 +122,7 @@
           <div class="alert alert-info mt-3 mb-0">
             <strong>Understanding the Metrics:</strong>
             <ul class="mb-0 mt-2">
-              <li><strong>Next-pack score</strong> — Estimated number of cards with a Pokémon you don't own yet among the common and uncommon slots of one pack: <code>4 × useful commons % + 3 × useful uncommons %</code> for Scarlet &amp; Violet and Mega Evolution, <code>5 × useful commons % + 3 × useful uncommons %</code> for Sword &amp; Shield. Trainers and Special Energy count in the totals but are never useful. Foil slots (reverse holo, rare and higher) are not included. Two useful cards can still be the same species. <em>Higher = more new Pokémon expected from the next pack.</em> Sets with another pack format or without common/uncommon totals are marked <strong>Fallback</strong> and are ranked after the others by Pull Chance %.</li>
+              <li><strong>Next-pack score</strong> — Expected number of Pokémon species you don't own yet from one pack. It counts the common, uncommon and reverse-holo slots: 4 commons, 3 uncommons and 2 reverse holos for Scarlet &amp; Violet and Mega Evolution, 5 commons, 3 uncommons and 1 reverse holo for Sword &amp; Shield. Every card in a slot is assumed equally likely. A species with more cards is more likely to show up, but pulling it twice counts once. Trainers and Special Energy take up slots but are never useful. The rare slot and the hits (ex, V, Illustration Rare and higher) are not included. <em>Higher = more new Pokémon expected from the next pack.</em> Sets with another pack format or without common/uncommon totals are marked <strong>Fallback</strong> and are ranked after the others by Pull Chance %.</li>
               <li><strong>Pull Chance %</strong> — Likelihood that a pulled Pokémon will be NEW. Accounts for rarity (Common = easier to pull). <em>Higher = better chance of getting something new!</em></li>
               <li><strong>Missing %</strong> — Simple percentage of unique Pokémon you still need (ignores rarity). <em>Higher = more of the set is useful.</em></li>
               <li><strong>Abs. Score</strong> — Total weighted value of missing Pokémon. Larger sets score higher. <em>Use this to compare raw potential.</em></li>
@@ -235,10 +235,21 @@
     'Hyper Rare': '#6610f2'
   };
 
-  // Common/uncommon slots per booster pack, used for the next-pack score.
+  // Non-foil and reverse-holo slots per booster pack, used for the next-pack score.
+  // Each slot group draws `count` different cards from all card numbers of its rarities, all equally likely.
+  // Rare and higher slots are left out. In Scarlet & Violet and Mega Evolution packs one reverse holo
+  // is sometimes replaced by an Illustration Rare or higher, which is ignored here.
   const PACK_PROFILES = {
-    modern: { Common: 4, Uncommon: 3 },
-    swsh: { Common: 5, Uncommon: 3 },
+    modern: [
+      { label: 'commons', rarities: ['Common'], count: 4 },
+      { label: 'uncommons', rarities: ['Uncommon'], count: 3 },
+      { label: 'reverse holos', rarities: ['Common', 'Uncommon', 'Rare'], count: 2 },
+    ],
+    swsh: [
+      { label: 'commons', rarities: ['Common'], count: 5 },
+      { label: 'uncommons', rarities: ['Uncommon'], count: 3 },
+      { label: 'reverse holos', rarities: ['Common', 'Uncommon', 'Rare', 'Rare Holo'], count: 1 },
+    ],
   };
 
   const SERIES_PACK_PROFILE = {
@@ -409,37 +420,65 @@
     return PACK_PROFILES[profileName] || null;
   }
 
-  // Estimated number of cards with a missing species among the common/uncommon slots of one pack.
-  // Each rarity contributes slots × (useful card numbers / all card numbers of that rarity).
+  // Chance that none of `matching` cards shows up when drawing `draws` different cards from `poolSize`.
+  function chanceToMissAll(poolSize, matching, draws) {
+    let chance = 1;
+    for (let i = 0; i < draws; i++) {
+      chance *= (poolSize - matching - i) / (poolSize - i);
+    }
+    return chance;
+  }
+
+  // Expected number of new Pokémon species from one pack, counting the common, uncommon and
+  // reverse-holo slots. A species with more cards in a slot group is more likely to show up,
+  // but pulling it twice still counts as one new species.
   function calculateNextPackScore(set) {
     const profile = getPackProfile(set);
     if (!profile) {
       return { score: null, breakdown: [], fallbackReason: 'Pack format not supported' };
     }
-    const totals = set.rarity_totals || {};
-    if (Object.keys(profile).some(rarity => !totals[rarity])) {
+    const totals = set.rarity_totals;
+    if (!totals || !totals.Common || !totals.Uncommon) {
       return { score: null, breakdown: [], fallbackReason: 'Missing common/uncommon totals' };
     }
 
-    const usefulNumbers = Object.fromEntries(Object.keys(profile).map(rarity => [rarity, new Set()]));
+    // Card numbers per missing species, per slot group
+    const missingCardsBySlot = profile.map(() => new Map());
     for (const pokemon of set.pokemon) {
       const pokemonDexNum = pokemon.dex_number || findPokemonMatch(pokemon.name, dexMap);
       for (const card of pokemon.cards) {
-        if (!(card.rarity in usefulNumbers)) continue;
         const dexNums = card.dex_numbers?.length ? card.dex_numbers : [pokemonDexNum];
-        if (dexNums.some(dexNum => dexNum && !ownedPokemon.has(dexNum))) {
-          usefulNumbers[card.rarity].add(card.number);
-        }
+        const missingDexNums = dexNums.filter(dexNum => dexNum && !ownedPokemon.has(dexNum));
+        profile.forEach((slot, i) => {
+          if (!slot.rarities.includes(card.rarity)) return;
+          for (const dexNum of missingDexNums) {
+            if (!missingCardsBySlot[i].has(dexNum)) missingCardsBySlot[i].set(dexNum, new Set());
+            missingCardsBySlot[i].get(dexNum).add(card.number);
+          }
+        });
       }
     }
 
-    const breakdown = Object.entries(profile).map(([rarity, slots]) => ({
-      rarity,
-      slots,
-      useful: usefulNumbers[rarity].size,
-      total: totals[rarity],
-    }));
-    const score = breakdown.reduce((sum, r) => sum + r.slots * (r.useful / r.total), 0);
+    const breakdown = profile.map((slot, i) => {
+      const usefulNumbers = new Set();
+      for (const numbers of missingCardsBySlot[i].values()) numbers.forEach(n => usefulNumbers.add(n));
+      return {
+        ...slot,
+        // Rarities without a key in rarity_totals have no cards in this set
+        total: slot.rarities.reduce((sum, rarity) => sum + (totals[rarity] || 0), 0),
+        useful: usefulNumbers.size,
+      };
+    });
+
+    const missingSpecies = new Set(missingCardsBySlot.flatMap(bySpecies => [...bySpecies.keys()]));
+    let score = 0;
+    for (const dexNum of missingSpecies) {
+      const chanceToMiss = breakdown.reduce((chance, slot, i) => {
+        const matching = missingCardsBySlot[i].get(dexNum)?.size || 0;
+        return chance * chanceToMissAll(slot.total, matching, slot.count);
+      }, 1);
+      score += 1 - chanceToMiss;
+    }
     return { score, breakdown, fallbackReason: null };
   }
 
@@ -671,7 +710,7 @@
           if (set.nextPackScore !== null) {
             badgeValue = set.nextPackScore.toFixed(2);
             badgeLabel = 'next-pack score';
-            badgeTitle = 'Next-pack score: estimated cards with a new Pokémon in the common and uncommon slots (foil slots not included)';
+            badgeTitle = 'Next-pack score: expected new Pokémon species from the common, uncommon and reverse-holo slots (rare slot not included)';
           } else {
             badgeValue = `${set.pullChance.toFixed(1)}%`;
             badgeLabel = 'fallback: pull chance';
@@ -725,12 +764,12 @@
         : `<div class="value"><span class="badge bg-warning text-dark">Fallback</span></div>
             <div class="label">${set.nextPackFallbackReason}</div>`;
       const breakdownHtml = set.nextPackBreakdown
-        .map(r => `${r.useful}/${r.total} ${r.rarity.toLowerCase()}s useful`)
+        .map(r => `${r.useful}/${r.total} ${r.label} useful`)
         .join(' · ');
 
       const missingHtml = `
         <div class="metrics-row">
-          <div class="metric-badge highlight" title="Estimated cards with a new Pokémon in the common/uncommon slots of one pack. Foil slots not included.">
+          <div class="metric-badge highlight" title="Expected new Pokémon species from the common, uncommon and reverse-holo slots of one pack. Rare slot not included.">
             ${nextPackHtml}
           </div>
           <div class="metric-badge highlight">
