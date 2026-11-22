@@ -20,7 +20,7 @@
     }
   ],
   "profile_photo": "https://public.getcollectr.com/public-assets/images/anon_profile_photo_orange.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-  "total_cards": "533",
+  "total_cards": "534",
   "total_sealed": "0",
   "total_graded": "0",
   "total_followers": "0",
@@ -28,7 +28,7 @@
   "total_posts": "0",
   "portfolio_value": [
     {
-      "price": "240.5019",
+      "price": "242.4519",
       "insertion_date": "2026-11-22T00:00:00.000Z"
     }
   ],
@@ -427,6 +427,26 @@
       "market_price": "2.0300",
       "market_price_diff": "0.0100",
       "market_price_percentage_diff": "0.4950",
+      "total_products_owned_count": "0",
+      "is_owned": true,
+      "is_card": true,
+      "card_condition": "NM",
+      "product_sub_type": "Holofoil"
+    },
+    {
+      "product_id": "545663",
+      "catalog_category_name": "Pokemon",
+      "catalog_group": "Jumbo Cards",
+      "catalog_group_id": "1528",
+      "product_name": "Lugia ex ",
+      "image_url": "https://public.getcollectr.com/public-assets/products/product_545663.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "card_number": "017/034",
+      "rarity": "Classic Collection",
+      "quantity": "1",
+      "grade_id": "52",
+      "market_price": "1.9500",
+      "market_price_diff": "0.1000",
+      "market_price_percentage_diff": "5.4054",
       "total_products_owned_count": "0",
       "is_owned": true,
       "is_card": true,
